@@ -49,7 +49,7 @@ export const plans = [
 export const faqs = [
   { q: "Wat kost een proeftraining?", a: "De proeftraining is gratis en vrijblijvend. Je maakt kennis met onze aanpak en de studio." },
   { q: "Moet ik al fit zijn?", a: "Nee. We starten met een nulmeting en passen alles aan op jouw niveau. We werken met mensen van 18 tot 60+." },
-  { q: "Hoe vaak train ik?", a: "Dat bepalen we samen — meestal 1 tot 3 keer per week, afhankelijk van jouw doel en schema." },
+  { q: "Hoe vaak train ik?", a: "Dat bepalen we samen, meestal 1 tot 3 keer per week, afhankelijk van jouw doel en schema." },
   { q: "Wat betekent 'meten = weten'?", a: "We werken met sportonderzoek en tussenmetingen zodat je op basis van data traint, niet op gevoel." },
   { q: "Kan ik samen trainen?", a: "Ja, via duo-training of small group train je met een partner of in een kleine groep." },
   { q: "Hoe zit het met opzeggen?", a: "Maandelijks opzegbaar na een minimale termijn. Geen verborgen kosten." },

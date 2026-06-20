@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { team } from "@/lib/data";
+import Reveal from "./Reveal";
 
 export default function Team() {
   const ref = useRef<HTMLDivElement>(null);
@@ -11,9 +12,13 @@ export default function Team() {
   return (
     <section id="team" style={{ background: "#131211", padding: "96px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        <p style={{ color: "#dbca91", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>De mensen</p>
+        <Reveal>
+          <p style={{ color: "#dbca91", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>De mensen</p>
+        </Reveal>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
-          <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>Ons team</h2>
+          <Reveal>
+            <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>Ons team</h2>
+          </Reveal>
           <div style={{ display: "flex", gap: 8 }}>
             {[-1, 1].map((d) => (
               <button key={d} onClick={() => scroll(d)}
@@ -28,16 +33,28 @@ export default function Team() {
       <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: 24, scrollbarWidth: "none" }}>
         {team.map((t) => (
           <div key={t.name} onMouseEnter={() => setHovered(t.name)} onMouseLeave={() => setHovered(null)}
-            style={{ flexShrink: 0, width: 260, position: "relative", cursor: "default" }}>
-            <div style={{ position: "relative", height: 360, overflow: "hidden" }}>
-              <Image src={t.img} alt={t.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
+            style={{ flexShrink: 0, width: 340, position: "relative", cursor: "default" }}>
+            <div style={{ position: "relative", height: 460, overflow: "hidden" }}>
+              <Image src={t.img} alt={t.name} fill style={{ objectFit: "cover", objectPosition: "top", transition: "transform 0.4s ease", transform: hovered === t.name ? "scale(1.04)" : "scale(1)" }} />
               <div style={{
-                position: "absolute", inset: 0, background: "rgba(12,11,10,0.92)", display: "flex", flexDirection: "column", justifyContent: "center", padding: 24,
-                opacity: hovered === t.name ? 1 : 0, transition: "opacity 0.3s"
+                position: "absolute", inset: 0,
+                background: hovered === t.name
+                  ? "linear-gradient(to top, rgba(12,11,10,0.97) 0%, rgba(12,11,10,0.7) 55%, rgba(12,11,10,0) 100%)"
+                  : "linear-gradient(to top, rgba(12,11,10,0.5) 0%, rgba(12,11,10,0) 50%)",
+                transition: "background 0.4s ease",
+              }} />
+              <div style={{
+                position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 20px",
+                opacity: hovered === t.name ? 1 : 0,
+                transform: hovered === t.name ? "translateY(0)" : "translateY(10px)",
+                transition: "opacity 0.35s ease, transform 0.35s ease",
               }}>
-                <p style={{ color: "#dbca91", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Specialisaties</p>
+                <p style={{ color: "#dbca91", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>Specialisaties</p>
                 {t.specs.map((s) => (
-                  <p key={s} style={{ color: "#f4efe6", fontSize: 14, margin: "0 0 8px", lineHeight: 1.5 }}>— {s}</p>
+                  <div key={s} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 7 }}>
+                    <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#dbca91", flexShrink: 0, display: "inline-block" }} />
+                    <span style={{ color: "#f4efe6", fontSize: 13, lineHeight: 1.4 }}>{s}</span>
+                  </div>
                 ))}
               </div>
             </div>

@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { diensten } from "@/lib/data";
+import Reveal from "./Reveal";
 
 export default function Diensten() {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,9 +11,13 @@ export default function Diensten() {
   return (
     <section id="diensten" style={{ background: "#0c0b0a", padding: "96px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        <p style={{ color: "#dbca91", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Wat we bieden</p>
+        <Reveal>
+          <p style={{ color: "#dbca91", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Wat we bieden</p>
+        </Reveal>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
-          <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>Diensten</h2>
+          <Reveal>
+            <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>Diensten</h2>
+          </Reveal>
           <div style={{ display: "flex", gap: 8 }}>
             {[-1, 1].map((d) => (
               <button key={d} onClick={() => scroll(d)}
