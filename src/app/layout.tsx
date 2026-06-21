@@ -90,7 +90,37 @@ const localBusinessSchema = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "14:00" },
   ],
   hasMap: "https://maps.google.com/?q=FIT+Partners+Deurne",
-  sameAs: ["https://www.instagram.com/fitpartnersdeurne/"],
+  sameAs: [
+    "https://www.instagram.com/fitpartners_/",
+    "https://www.facebook.com/FITPartners/",
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    bestRating: "5",
+    worstRating: "1",
+    ratingCount: "3",
+  },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Mark" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Voor het eerst train ik met een plan dat klopt. De tussenmetingen houden me echt scherp.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Esther" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Geen anoniem sportschool-gevoel maar echte begeleiding. Ik zie elke maand vooruitgang.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Joost" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "De rust en aandacht in de studio zijn top. Ik ga met plezier en haal mijn doelen.",
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
