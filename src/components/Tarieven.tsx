@@ -31,7 +31,7 @@ export default function Tarieven() {
                 <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: p.featured ? "#0c0b0a" : "#f4efe6", margin: "0 0 24px" }}>{p.name}</h3>
                 <div style={{ marginBottom: 32 }}>
                   <span style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: p.featured ? "#0c0b0a" : "#f4efe6" }}>{p.price}</span>
-                  <span style={{ color: p.featured ? "#6f6a60" : "#b8b3aa", fontSize: 14, marginLeft: 4 }}>{p.period}</span>
+                  <span style={{ color: p.featured ? "#0c0b0a" : "#b8b3aa", fontSize: 14, marginLeft: 4 }}>{p.period}</span>
                 </div>
                 <ul style={{ listStyle: "none", margin: "0 0 36px", padding: 0 }}>
                   {p.features.map((f) => (
