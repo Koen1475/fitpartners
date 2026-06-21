@@ -116,11 +116,25 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Kolom 4 – Steunt */}
+          {/* Kolom 4 – Kennisbank */}
           <div>
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>FIT Partners steunt</h4>
+            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Kennisbank</h4>
+            {[
+              { label: "Veelgestelde vragen", href: "/kennisbank/faq" },
+              { label: "Wat is VO2max?", href: "/kennisbank/wat-is-vo2max" },
+              { label: "Functional Training voordelen", href: "/kennisbank/functional-training-voordelen" },
+              { label: "Voeding en sport", href: "/kennisbank/voeding-en-sport" },
+            ].map((link) => (
+              <a key={link.href} href={link.href}
+                style={{ display: "block", color: "#6f6a60", textDecoration: "none", fontSize: 13, padding: "9px 0", borderBottom: "1px solid #1a1917", transition: "color 0.2s" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+                {link.label}
+              </a>
+            ))}
+            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners steunt</h4>
             {charities.map((c) => (
-              <div key={c} style={{ borderTop: "1px solid #2a2720", padding: "14px 0", color: "#6f6a60", fontSize: 14 }}>{c}</div>
+              <div key={c} style={{ color: "#6f6a60", fontSize: 13, padding: "7px 0", borderBottom: "1px solid #1a1917" }}>{c}</div>
             ))}
           </div>
 
