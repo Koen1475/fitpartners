@@ -23,12 +23,12 @@ export default function Header() {
         <nav style={{ display: "flex", gap: 32, alignItems: "center" }} className="desktop-nav">
           {links.map((l) => (
             <a key={l.href} href={l.href} style={{ color: "#a39d92", textDecoration: "none", fontSize: 14, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500 }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#dbca91")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "#a39d92")}>
               {l.label}
             </a>
           ))}
-          <a href="#contact" style={{ background: "#dbca91", color: "#0c0b0a", padding: "10px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+          <a href="#contact" style={{ background: "#b79d3e", color: "#0c0b0a", padding: "10px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
             Gratis intake
           </a>
         </nav>
@@ -47,7 +47,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#contact" onClick={() => setOpen(false)}
-            style={{ display: "block", background: "#dbca91", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", textAlign: "center", marginTop: 16 }}>
+            style={{ display: "block", background: "#b79d3e", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", textAlign: "center", marginTop: 16 }}>
             Gratis intake
           </a>
         </div>

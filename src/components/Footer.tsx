@@ -16,7 +16,7 @@ export default function Footer() {
             <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Navigatie</h4>
             {["#aanpak", "#diensten", "#team", "#tarieven", "#faq"].map((href) => (
               <a key={href} href={href} style={{ display: "block", color: "#6f6a60", textDecoration: "none", fontSize: 14, marginBottom: 10 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#dbca91")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
                 {href.replace("#", "").charAt(0).toUpperCase() + href.replace("#", "").slice(1)}
               </a>
