@@ -1,7 +1,19 @@
 "use client";
 import Script from "next/script";
+import { useEffect } from "react";
 
 export default function RoosterCrossbox() {
+  useEffect(() => {
+    const tryInit = () => {
+      if (typeof (window as any).embed_rooster !== "undefined") {
+        (window as any).embed_rooster.init("https://fitpartners.sportbitapp.nl/", 1);
+      } else {
+        setTimeout(tryInit, 100);
+      }
+    };
+    tryInit();
+  }, []);
+
   return (
     <main>
       {/* Hero */}
@@ -28,11 +40,6 @@ export default function RoosterCrossbox() {
           <Script
             src="https://fitpartners.sportbitapp.nl/cbm/embed/rooster/cdn/"
             strategy="afterInteractive"
-            onLoad={() => {
-              if (typeof (window as any).embed_rooster !== "undefined") {
-                (window as any).embed_rooster.init("https://fitpartners.sportbitapp.nl/", 1);
-              }
-            }}
           />
         </div>
       </section>
