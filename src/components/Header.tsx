@@ -50,9 +50,9 @@ function DropdownItem({ item }: { item: NavItem }) {
   if (!item.children) {
     return (
       <Link href={item.href!}
-        style={{ color: "#a39d92", textDecoration: "none", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, whiteSpace: "nowrap" }}
+        style={{ color: "#b8b3aa", textDecoration: "none", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, whiteSpace: "nowrap" }}
         onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
-        onMouseLeave={(e) => (e.currentTarget.style.color = "#a39d92")}>
+        onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
         {item.label}
       </Link>
     );
@@ -60,7 +60,7 @@ function DropdownItem({ item }: { item: NavItem }) {
 
   return (
     <div style={{ position: "relative" }} onMouseEnter={show} onMouseLeave={hide}>
-      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#b79d3e" : "#a39d92", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
+      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#b79d3e" : "#b8b3aa", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
         {item.label}
         <span style={{ fontSize: 9, transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s", display: "inline-block" }}>▼</span>
       </button>
@@ -68,9 +68,9 @@ function DropdownItem({ item }: { item: NavItem }) {
         <div style={{ position: "absolute", top: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", background: "#131211", border: "1px solid #2a2720", borderTop: "2px solid #b79d3e", minWidth: 200, zIndex: 100, padding: "8px 0" }}>
           {item.children.map((c) => (
             <Link key={c.href} href={c.href}
-              style={{ display: "block", color: "#a39d92", textDecoration: "none", fontSize: 13, padding: "10px 20px", whiteSpace: "nowrap", transition: "color 0.15s, background 0.15s" }}
+              style={{ display: "block", color: "#b8b3aa", textDecoration: "none", fontSize: 13, padding: "10px 20px", whiteSpace: "nowrap", transition: "color 0.15s, background 0.15s" }}
               onMouseEnter={(e) => { e.currentTarget.style.color = "#f4efe6"; e.currentTarget.style.background = "#1e1d1b"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = "#a39d92"; e.currentTarget.style.background = "transparent"; }}>
+              onMouseLeave={(e) => { e.currentTarget.style.color = "#b8b3aa"; e.currentTarget.style.background = "transparent"; }}>
               {c.label}
             </Link>
           ))}
@@ -115,7 +115,7 @@ export default function Header() {
               {item.children ? (
                 <>
                   <button onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
-                    style={{ width: "100%", background: "none", border: "none", textAlign: "left", color: "#a39d92", padding: "13px 24px", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", cursor: "pointer", display: "flex", justifyContent: "space-between", borderBottom: "1px solid #2a2720" }}>
+                    style={{ width: "100%", background: "none", border: "none", textAlign: "left", color: "#b8b3aa", padding: "13px 24px", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", cursor: "pointer", display: "flex", justifyContent: "space-between", borderBottom: "1px solid #2a2720" }}>
                     {item.label} <span>{mobileExpanded === item.label ? "−" : "+"}</span>
                   </button>
                   {mobileExpanded === item.label && item.children.map((c) => (
@@ -127,7 +127,7 @@ export default function Header() {
                 </>
               ) : (
                 <Link href={item.href!} onClick={() => setMobileOpen(false)}
-                  style={{ display: "block", color: "#a39d92", textDecoration: "none", padding: "13px 24px", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", borderBottom: "1px solid #2a2720" }}>
+                  style={{ display: "block", color: "#b8b3aa", textDecoration: "none", padding: "13px 24px", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", borderBottom: "1px solid #2a2720" }}>
                   {item.label}
                 </Link>
               )}

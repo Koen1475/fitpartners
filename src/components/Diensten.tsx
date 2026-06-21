@@ -37,7 +37,7 @@ export default function Diensten() {
             </div>
             <div style={{ padding: 28 }}>
               <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px" }}>{d.title}</h3>
-              <p style={{ color: "#a39d92", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{d.desc}</p>
+              <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{d.desc}</p>
             </div>
           </div>
         ))}

@@ -87,7 +87,7 @@ export default function Crossbox() {
       <section style={{ background: "#0c0b0a", padding: "80px 24px 96px", overflowX: "hidden" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <Reveal>
-            <p style={{ color: "#a39d92", fontSize: 14, marginBottom: 56, lineHeight: 1.7, maxWidth: 680 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 14, marginBottom: 56, lineHeight: 1.7, maxWidth: 680 }}>
               Alle onderstaande lessen zijn te volgen, afzonderlijk van het functioneel trainen in ons Trainingscentrum:
             </p>
           </Reveal>
@@ -145,7 +145,7 @@ export default function Crossbox() {
                   {tabs[active].label}
                 </h2>
                 {tabs[active].content.map((para, i) => (
-                  <p key={i} style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: i < tabs[active].content.length - 1 ? "0 0 18px" : 0 }}>
+                  <p key={i} style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.9, margin: i < tabs[active].content.length - 1 ? "0 0 18px" : 0 }}>
                     {para}
                   </p>
                 ))}
@@ -163,7 +163,7 @@ export default function Crossbox() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>
               Direct een afspraak maken?
             </h2>
-            <p style={{ color: "#a39d92", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
               <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.

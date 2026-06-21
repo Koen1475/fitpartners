@@ -120,7 +120,7 @@ export default function WieZijnWe() {
                     <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px", lineHeight: 1.1 }}>
                       {item.title}
                     </h2>
-                    <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
+                    <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
                       {item.body}
                     </p>
                     {item.milestone && (
@@ -144,7 +144,7 @@ export default function WieZijnWe() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(26px, 4vw, 44px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>
               Maak deel uit van ons verhaal
             </h2>
-            <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.8, marginBottom: 36 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.8, marginBottom: 36 }}>
               Kom kennismaken en ontdek wat FIT Partners voor jou kan betekenen.
             </p>
             <a href="tel:06-14634488"

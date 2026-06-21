@@ -10,7 +10,7 @@ export default function Contact() {
           <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1 }}>
             Gratis intake
           </h2>
-          <p style={{ color: "#a39d92", fontSize: 17, lineHeight: 1.8, marginBottom: 48 }}>
+          <p style={{ color: "#b8b3aa", fontSize: 17, lineHeight: 1.8, marginBottom: 48 }}>
             Maak een afspraak voor een vrijblijvende kennismaking. We bespreken jouw doelen en laten je de studio zien.
           </p>
           <a href="mailto:info@fit-partners.nl?subject=Gratis intake aanvragen"

@@ -24,7 +24,7 @@ export default function Aanpak() {
               <div style={{ borderTop: "1px solid #2a2720", paddingTop: 28 }}>
                 <div style={{ fontFamily: "var(--font-anton)", fontSize: 56, color: "#b79d3e", opacity: 0.2, lineHeight: 1, marginBottom: 16 }}>{s.num}</div>
                 <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 24, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px" }}>{s.title}</h3>
-                <p style={{ color: "#a39d92", lineHeight: 1.7, fontSize: 15, margin: 0 }}>{s.desc}</p>
+                <p style={{ color: "#b8b3aa", lineHeight: 1.7, fontSize: 15, margin: 0 }}>{s.desc}</p>
               </div>
             </Reveal>
           ))}

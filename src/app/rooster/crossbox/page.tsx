@@ -47,7 +47,7 @@ export default function RoosterCrossbox() {
       {/* CTA */}
       <section style={{ background: "#131211", padding: "64px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 480, margin: "0 auto" }}>
-          <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.8, marginBottom: 28 }}>
+          <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.8, marginBottom: 28 }}>
             Vragen over het CrossBox rooster of inschrijven voor een les?
           </p>
           <a href="tel:06-14634488"
@@ -127,7 +127,7 @@ export default function RoosterCrossbox() {
           letter-spacing: 0.08em !important;
         }
         #sportbit-rooster .embed-rooster .days .day-month {
-          color: #a39d92 !important;
+          color: #b8b3aa !important;
           font-size: 11px !important;
         }
 
@@ -172,7 +172,7 @@ export default function RoosterCrossbox() {
           color: #d4b84a !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .trainer {
-          color: #a39d92 !important;
+          color: #b8b3aa !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd {
           background: #131211 !important;
@@ -206,7 +206,7 @@ export default function RoosterCrossbox() {
           background: #0c0b0a !important;
         }
         #sportbit-rooster .embed-rooster .loading span {
-          color: #a39d92 !important;
+          color: #b8b3aa !important;
           font-size: 13px !important;
         }
         #sportbit-rooster .embed-rooster .lds-dual-ring:after {

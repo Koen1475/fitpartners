@@ -22,10 +22,10 @@ export default function Footer() {
           {/* Kolom 1 – Contact */}
           <div>
             <Image src="/images/FIT-Partners-Logo-Witte-Letters-450X150.png" alt="FIT Partners" width={160} height={54} style={{ objectFit: "contain", marginBottom: 20 }} />
-            <p style={{ color: "#a39d92", fontSize: 14, lineHeight: 2, margin: 0 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 2, margin: 0 }}>
               dr. Huub van Doorneweg 8d<br />
               5753 PM Deurne<br />
-              <a href="tel:06-14634488" style={{ color: "#a39d92", textDecoration: "none" }}>T: 06-14634488</a><br />
+              <a href="tel:06-14634488" style={{ color: "#b8b3aa", textDecoration: "none" }}>T: 06-14634488</a><br />
               <a href="mailto:info@fit-partners.nl" style={{ color: "#b79d3e", textDecoration: "none" }}
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
                 onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
@@ -41,7 +41,7 @@ export default function Footer() {
               <tbody>
                 {hours.map(({ day, time }) => (
                   <tr key={day}>
-                    <td style={{ color: "#a39d92", fontSize: 13, paddingBottom: 7, paddingRight: 16, whiteSpace: "nowrap", verticalAlign: "top" }}>{day}:</td>
+                    <td style={{ color: "#b8b3aa", fontSize: 13, paddingBottom: 7, paddingRight: 16, whiteSpace: "nowrap", verticalAlign: "top" }}>{day}:</td>
                     <td style={{ color: "#6f6a60", fontSize: 13, paddingBottom: 7, verticalAlign: "top" }}>{time}</td>
                   </tr>
                 ))}
@@ -57,9 +57,9 @@ export default function Footer() {
               { label: "Instagram", href: "https://instagram.com", icon: "◎" },
             ].map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                style={{ display: "flex", alignItems: "center", gap: 10, color: "#a39d92", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
+                style={{ display: "flex", alignItems: "center", gap: 10, color: "#b8b3aa", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#a39d92")}>
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
                 <span style={{ width: 28, height: 28, border: "1px solid #2a2720", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, flexShrink: 0 }}>{s.icon}</span>
                 {s.label}
               </a>
@@ -71,9 +71,9 @@ export default function Footer() {
               { label: "App Store", href: "#" },
             ].map((app) => (
               <a key={app.label} href={app.href}
-                style={{ display: "block", border: "1px solid #2a2720", color: "#a39d92", textDecoration: "none", fontSize: 13, padding: "10px 16px", marginBottom: 10, transition: "border-color 0.2s, color 0.2s" }}
+                style={{ display: "block", border: "1px solid #2a2720", color: "#b8b3aa", textDecoration: "none", fontSize: 13, padding: "10px 16px", marginBottom: 10, transition: "border-color 0.2s, color 0.2s" }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#b79d3e"; e.currentTarget.style.color = "#f4efe6"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#2a2720"; e.currentTarget.style.color = "#a39d92"; }}>
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#2a2720"; e.currentTarget.style.color = "#b8b3aa"; }}>
                 ↓ {app.label}
               </a>
             ))}
@@ -93,7 +93,7 @@ export default function Footer() {
         <div style={{ borderTop: "1px solid #2a2720", padding: "20px 0", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
           <p style={{ color: "#6f6a60", fontSize: 13, margin: 0 }}>© 2026 FIT Partners</p>
           <a href="/privacy" style={{ color: "#6f6a60", fontSize: 13, textDecoration: "none" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#a39d92")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
             Privacyverklaring
           </a>

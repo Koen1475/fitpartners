@@ -90,13 +90,13 @@ export default function Sportonderzoeken() {
             </h2>
           </Reveal>
           <Reveal>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: "0 0 24px" }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 24px" }}>
               De VO2max, de anaerobe drempel en de bewegingseconomie (belangrijke termen in de sportwereld) zijn allen te
               verbeteren door training. Voorwaarde om deze 3 variabelen optimaal te ontwikkelen is het maken van goede keuzes
               in het trainingsprogramma (en eventuele periodisering richting wedstrijden en events). De sportonderzoeken geven
               je inzicht in deze trainingsvariabelen en geven je de richtlijnen om het trainingseffect te optimaliseren.
             </p>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: 0 }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: 0 }}>
               Door middel van het koppelen van vaste meetprotocollen en een maximaaltest aan lactaatmetingen en
               ademgasanalyse, kunnen we VO2max, anaerobe drempel en bewegingseconomie nauwkeurig in kaart brengen. Het
               aanvullende spiervermogens-onderzoek geeft inzicht in kracht en balans van grote spiergroepen. Op basis van
@@ -145,7 +145,7 @@ export default function Sportonderzoeken() {
       <section style={{ background: "#0c0b0a", padding: "72px 24px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <Reveal>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: "0 0 64px", borderLeft: "3px solid #b79d3e", paddingLeft: 28 }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 64px", borderLeft: "3px solid #b79d3e", paddingLeft: 28 }}>
               De behaalde resultaten worden uitvoerig met je besproken en vertaald naar de praktijk. Basisconditie, maximale
               vermogens, sterke en zwakke punten bepalen in grote lijnen het algemene trainingsadvies. Trainingsrichtlijnen
               worden gesteld a.d.h.v. je doelstellingen en je kunt hierna direct aan de slag!
@@ -172,7 +172,7 @@ export default function Sportonderzoeken() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>
               Direct een afspraak maken?
             </h2>
-            <p style={{ color: "#a39d92", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
               <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.

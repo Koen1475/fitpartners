@@ -40,10 +40,10 @@ export default function FunctionalTraining() {
             </p>
           </Reveal>
           <Reveal>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: "0 0 24px" }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 24px" }}>
               Kies je voor FIT Partners dan kies je voor topbegeleiding op maat!
             </p>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: 0 }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: 0 }}>
               We starten met een eerste kennismaking. Er wordt aandacht besteed aan diverse basis bewegingsvormen.
               Jouw trainer checkt aan de hand hiervan het startpunt waar vanuit gewerkt kan worden met eerste oefenvormen
               die voor jou geschikt zijn. Je gaat eerst aan de slag, leert ons centrum en onze manier van trainen kennen.
@@ -82,7 +82,7 @@ export default function FunctionalTraining() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>
               Direct een afspraak maken?
             </h2>
-            <p style={{ color: "#a39d92", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
               <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.

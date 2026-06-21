@@ -31,11 +31,11 @@ export default function Tarieven() {
                 <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: p.featured ? "#0c0b0a" : "#f4efe6", margin: "0 0 24px" }}>{p.name}</h3>
                 <div style={{ marginBottom: 32 }}>
                   <span style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: p.featured ? "#0c0b0a" : "#f4efe6" }}>{p.price}</span>
-                  <span style={{ color: p.featured ? "#6f6a60" : "#a39d92", fontSize: 14, marginLeft: 4 }}>{p.period}</span>
+                  <span style={{ color: p.featured ? "#6f6a60" : "#b8b3aa", fontSize: 14, marginLeft: 4 }}>{p.period}</span>
                 </div>
                 <ul style={{ listStyle: "none", margin: "0 0 36px", padding: 0 }}>
                   {p.features.map((f) => (
-                    <li key={f} style={{ color: p.featured ? "#131211" : "#a39d92", fontSize: 14, padding: "8px 0", borderBottom: `1px solid ${p.featured ? "rgba(12,11,10,0.15)" : "#2a2720"}`, display: "flex", gap: 10, alignItems: "center" }}>
+                    <li key={f} style={{ color: p.featured ? "#131211" : "#b8b3aa", fontSize: 14, padding: "8px 0", borderBottom: `1px solid ${p.featured ? "rgba(12,11,10,0.15)" : "#2a2720"}`, display: "flex", gap: 10, alignItems: "center" }}>
                       <span style={{ width: 6, height: 6, borderRadius: "50%", background: p.featured ? "#0c0b0a" : "#b79d3e", flexShrink: 0, display: "inline-block" }} />
                       {f}
                     </li>

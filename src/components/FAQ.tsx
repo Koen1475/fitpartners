@@ -28,7 +28,7 @@ export default function FAQ() {
                 overflow: "hidden", maxHeight: open === i ? 200 : 0, opacity: open === i ? 1 : 0,
                 transition: "max-height 0.35s ease, opacity 0.3s ease",
               }}>
-                <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.8, margin: "0 0 24px", paddingRight: 48 }}>{f.a}</p>
+                <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.8, margin: "0 0 24px", paddingRight: 48 }}>{f.a}</p>
               </div>
             </div>
           </Reveal>

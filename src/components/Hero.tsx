@@ -8,7 +8,7 @@ export default function Hero() {
       <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px", width: "100%" }}>
         <div className="hero-line-1" style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 24 }}>
           <span style={{ color: "#b79d3e", fontSize: 18 }}>★★★★★</span>
-          <span style={{ color: "#a39d92", fontSize: 14 }}>5.0 · 40+ beoordelingen</span>
+          <span style={{ color: "#b8b3aa", fontSize: 14 }}>5.0 · 40+ beoordelingen</span>
         </div>
 
         <h1 className="hero-line-2" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px" }}>
@@ -28,9 +28,9 @@ export default function Hero() {
             onMouseLeave={(e) => (e.currentTarget.style.background = "#b79d3e")}>
             Gratis intake aanvragen
           </a>
-          <a href="#aanpak" style={{ border: "1px solid #a39d92", color: "#f4efe6", padding: "16px 36px", fontWeight: 600, fontSize: 14, letterSpacing: "0.05em", textTransform: "uppercase", textDecoration: "none", transition: "border-color 0.2s, color 0.2s" }}
+          <a href="#aanpak" style={{ border: "1px solid #b8b3aa", color: "#f4efe6", padding: "16px 36px", fontWeight: 600, fontSize: 14, letterSpacing: "0.05em", textTransform: "uppercase", textDecoration: "none", transition: "border-color 0.2s, color 0.2s" }}
             onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#b79d3e"; e.currentTarget.style.color = "#b79d3e"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#a39d92"; e.currentTarget.style.color = "#f4efe6"; }}>
+            onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#b8b3aa"; e.currentTarget.style.color = "#f4efe6"; }}>
             Onze aanpak
           </a>
         </div>

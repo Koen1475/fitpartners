@@ -37,13 +37,13 @@ export default function Voedingsadvies() {
           </Reveal>
 
           <Reveal>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: "0 0 24px" }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 24px" }}>
               En let op, daarmee doelen we vooral niet op een strenge of hele gekke dieetcultuur, zoals je deze wellicht wel kent.
               Wanneer je het hebt over voeding, schrikt het vaak af want: je mag dit niet en dat niet. De focus wordt vaak gelegd op
               wat NIET. Het zijn vaak kort vol te houden trajecten met korte termijn resultaten die je niet langdurig in je leven
               gepast krijgt.
             </p>
-            <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: 0 }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: 0 }}>
               Wij willen ons maar al te graag focussen op wat WEL. Het moet goed vol te houden zijn en passen in jouw leven,
               daarmee creëren we een levensstijl die past bij jou. Dat hoeft niet á la minute, daar groei je in. Ieder individu
               is anders, beweegt anders, heeft andere voedingsstoffen nodig die passen in zijn of haar levensstijl.
@@ -63,7 +63,7 @@ export default function Voedingsadvies() {
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px" }}>
                   Persoonlijk plan
                 </h2>
-                <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
+                <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
                   Met intensieve begeleiding gaan we aan de slag. Dat houdt in dat we starten met een intakegesprek waarin jouw
                   eigen waardes worden bepaald. We bespreken jouw doel en verwachtingen voor de komende maanden en maken samen
                   een persoonlijk en gericht plan. Hoe is jouw leefstijl nu, waar kunnen we al in meedenken, en dat allemaal
@@ -78,7 +78,7 @@ export default function Voedingsadvies() {
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px" }}>
                   Alles onder één dak
                 </h2>
-                <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
+                <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
                   We maken tussentijdse afspraken en werken met een gebruiksvriendelijke voedingsapp waarin we jouw waarden goed
                   kunnen bijhouden. Je wordt jezelf bewust van hetgeen wat je eet. Het voordeel is dat we dit kunnen aanbieden
                   onder één dak. Sport jij bij ons? Dan hebben we ook het beste zicht op jouw energieverbruik, zo blijven we
@@ -98,7 +98,7 @@ export default function Voedingsadvies() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>
               Direct een afspraak maken?
             </h2>
-            <p style={{ color: "#a39d92", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
+            <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
               <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.

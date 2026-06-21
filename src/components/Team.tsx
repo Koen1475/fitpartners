@@ -60,7 +60,7 @@ export default function Team() {
             </div>
             <div style={{ padding: "16px 0" }}>
               <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 20, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 4px" }}>{t.name}</h3>
-              <p style={{ color: "#a39d92", fontSize: 13, margin: 0 }}>{t.role}</p>
+              <p style={{ color: "#b8b3aa", fontSize: 13, margin: 0 }}>{t.role}</p>
             </div>
           </div>
         ))}

@@ -110,7 +110,7 @@ export default function MissieVisie() {
               </Reveal>
               <Reveal delay={2}>
                 <div style={{ background: "#131211", padding: "32px 36px", borderLeft: "3px solid #2a2720" }}>
-                  <p style={{ fontSize: 17, color: "#a39d92", lineHeight: 1.85, margin: 0, fontWeight: 300 }}>
+                  <p style={{ fontSize: 17, color: "#b8b3aa", lineHeight: 1.85, margin: 0, fontWeight: 300 }}>
                     FIT Partners is toonaangevend voor sport- en bewegingsbegeleiding, advisering en coaching
                     en is een onderdeel van de{" "}
                     <strong style={{ color: "#cfc9bd", fontWeight: 600 }}>preventieve gezondheidszorg van Nederland</strong>.
