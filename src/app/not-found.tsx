@@ -10,7 +10,7 @@ export default function NotFound() {
   return (
     <main style={{ background: "#0c0b0a", minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "80px 24px" }}>
       <div style={{ textAlign: "center", maxWidth: 520 }}>
-        <p style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(96px, 18vw, 180px)", color: "#131211", lineHeight: 1, margin: "0 0 -16px", userSelect: "none" }}>
+        <p style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(96px, 18vw, 180px)", color: "#131211", lineHeight: 1, margin: "0 0 32px", userSelect: "none" }}>
           404
         </p>
         <div style={{ width: 48, height: 2, background: "#b79d3e", margin: "0 auto 32px" }} />
