@@ -95,7 +95,7 @@ export default function CrossboxContent() {
                 ))}
               </div>
             </div>
-            <div style={{ padding: "40px 48px", minHeight: 320, display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <div className="crossbox-content" style={{ padding: "40px 48px", minHeight: 320, display: "flex", flexDirection: "column", justifyContent: "center" }}>
               <div style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(8px)", transition: "opacity 0.25s ease, transform 0.25s ease" }}>
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(24px, 3vw, 36px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 28px", lineHeight: 1 }}>{tabs[active].label}</h2>
                 {tabs[active].content.map((para, i) => (
@@ -136,6 +136,7 @@ export default function CrossboxContent() {
           .tabs-inner::-webkit-scrollbar { display: none; }
           .tabs-inner button { width: auto !important; border-left: none !important; border-bottom: 3px solid transparent !important; padding: 14px 20px !important; flex-shrink: 0 !important; white-space: nowrap !important; }
           .scroll-hint { display: block; }
+          .crossbox-content { padding: 24px 20px !important; }
         }
       `}</style>
     </main>
