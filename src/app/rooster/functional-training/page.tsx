@@ -173,9 +173,9 @@ export default function RoosterFunctionalTraining() {
           color: #a39d92 !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd {
-          background: #0f0e0d !important;
-          border-left-color: #3a3530 !important;
-          opacity: 0.55 !important;
+          background: #131211 !important;
+          border-left-color: #b79d3e !important;
+          opacity: 1 !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .title {
           color: #f4efe6 !important;
