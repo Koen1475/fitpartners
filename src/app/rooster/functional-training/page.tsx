@@ -86,10 +86,19 @@ export default function RoosterFunctionalTraining() {
           color: #4a4540 !important;
           cursor: default !important;
         }
+        #sportbit-rooster .embed-rooster .top .period,
+        #sportbit-rooster .embed-rooster .top #sportbit-periode {
+          background: #1e1d1b !important;
+          border: 1px solid #2a2720 !important;
+          border-radius: 0 !important;
+          padding: 6px 20px !important;
+        }
         #sportbit-rooster .embed-rooster .top .period span {
-          color: #a39d92 !important;
+          color: #f4efe6 !important;
           font-size: 13px !important;
-          letter-spacing: 0.04em !important;
+          font-weight: 600 !important;
+          letter-spacing: 0.06em !important;
+          text-transform: uppercase !important;
         }
         #sportbit-rooster .embed-rooster .top .week span {
           color: #f4efe6 !important;
@@ -140,13 +149,13 @@ export default function RoosterFunctionalTraining() {
         /* ── Event items ── */
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem {
           background: #131211 !important;
-          border-left: 3px solid #b79d3e !important;
-          border-color: #b79d3e !important;
+          border: none !important;
+          border-left: 4px solid #b79d3e !important;
           border-radius: 0 !important;
           margin: 3px 6px !important;
           padding: 7px 10px !important;
           cursor: pointer !important;
-          transition: background 0.15s, border-color 0.15s !important;
+          transition: background 0.15s !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover {
           background: #1e1d1b !important;
@@ -154,8 +163,7 @@ export default function RoosterFunctionalTraining() {
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd {
           background: #0f0e0d !important;
           border-left-color: #3a3530 !important;
-          border-color: #3a3530 !important;
-          opacity: 0.6 !important;
+          opacity: 0.55 !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .title {
           color: #f4efe6 !important;
