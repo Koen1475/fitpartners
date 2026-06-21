@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Anton, Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const anton = Anton({
   weight: "400",
@@ -31,7 +33,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl" className={`${anton.variable} ${montserrat.variable}`}>
-      <body style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>{children}</body>
+      <body style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
