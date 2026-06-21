@@ -13,6 +13,37 @@ const hours = [
 
 const charities = ["Alpe d'HuZes", "KiKa", "Fieke"];
 
+function InstagramIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M24 12.073C24 5.404 18.628 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.026 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+    </svg>
+  );
+}
+
+const social = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/fitpartners_/",
+    Icon: InstagramIcon,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/FITPartners/",
+    Icon: FacebookIcon,
+  },
+];
+
 export default function Footer() {
   return (
     <footer style={{ background: "#0c0b0a", borderTop: "2px solid #b79d3e", padding: "64px 24px 0" }}>
@@ -52,16 +83,22 @@ export default function Footer() {
           {/* Kolom 3 – Social + App */}
           <div>
             <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Volg ons op</h4>
-            {[
-              { label: "Facebook", href: "https://facebook.com", icon: "f" },
-              { label: "Instagram", href: "https://instagram.com", icon: "◎" },
-            ].map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                style={{ display: "flex", alignItems: "center", gap: 10, color: "#b8b3aa", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
+            {social.map(({ label, href, Icon }) => (
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+                style={{ display: "flex", alignItems: "center", gap: 12, color: "#b8b3aa", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
-                <span style={{ width: 28, height: 28, border: "1px solid #2a2720", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, flexShrink: 0 }}>{s.icon}</span>
-                {s.label}
+                <span style={{
+                  width: 32, height: 32, border: "1px solid #2a2720",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  flexShrink: 0, transition: "border-color 0.2s",
+                }}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#b79d3e")}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#2a2720")}
+                >
+                  <Icon />
+                </span>
+                {label}
               </a>
             ))}
 

@@ -26,6 +26,16 @@ const nav: NavItem[] = [
   },
   { label: "Partners", href: "/partners" },
   {
+    label: "Kennisbank",
+    children: [
+      { label: "Overzicht", href: "/kennisbank" },
+      { label: "FAQ", href: "/kennisbank/faq" },
+      { label: "Wat is VO2max?", href: "/kennisbank/wat-is-vo2max" },
+      { label: "Functional Training voordelen", href: "/kennisbank/functional-training-voordelen" },
+      { label: "Voeding en sport", href: "/kennisbank/voeding-en-sport" },
+    ],
+  },
+  {
     label: "Over ons",
     children: [
       { label: "Wie zijn we", href: "/over-ons/wie-zijn-we" },
