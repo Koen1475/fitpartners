@@ -46,7 +46,9 @@ const tabs = [
 export default function Crossbox() {
   const [active, setActive] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [scrollHint, setScrollHint] = useState(true);
   const prev = useRef(0);
+  const tabsRef = useRef<HTMLDivElement>(null);
 
   const switchTab = (i: number) => {
     if (i === active) return;
@@ -55,6 +57,11 @@ export default function Crossbox() {
       setActive(i);
       prev.current = i;
       setVisible(true);
+      // Auto-scroll active tab into view on mobile
+      if (tabsRef.current) {
+        const btns = tabsRef.current.querySelectorAll("button");
+        btns[i]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
     }, 200);
   };
 
@@ -88,7 +95,18 @@ export default function Crossbox() {
           <div style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: 0 }} className="crossbox-grid">
 
             {/* Sidebar tabs */}
-            <div style={{ borderRight: "1px solid #2a2720" }}>
+            <div style={{ borderRight: "1px solid #2a2720", position: "relative" }}>
+              {/* Mobile scroll hint — fades out after first scroll */}
+              <div className="scroll-hint" style={{
+                position: "absolute", right: 0, top: 0, bottom: 0, width: 56, zIndex: 2, pointerEvents: "none",
+                background: "linear-gradient(to right, transparent, #0c0b0a)",
+                opacity: scrollHint ? 1 : 0, transition: "opacity 0.4s ease",
+              }}>
+                <div style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", color: "#b79d3e", fontSize: 18 }}
+                  className="hint-arrow">›</div>
+              </div>
+
+              <div ref={tabsRef} className="tabs-inner" onScroll={() => setScrollHint(false)}>
               {tabs.map((tab, i) => (
                 <button key={tab.label} onClick={() => switchTab(i)}
                   style={{
@@ -117,6 +135,7 @@ export default function Crossbox() {
                   </span>
                 </button>
               ))}
+              </div>
             </div>
 
             {/* Content panel */}
@@ -160,26 +179,48 @@ export default function Crossbox() {
       </section>
 
       <style>{`
+        @keyframes hintBounce {
+          0%, 100% { transform: translateY(-50%) translateX(0); }
+          50% { transform: translateY(-50%) translateX(4px); }
+        }
+        .hint-arrow {
+          animation: hintBounce 1s ease-in-out infinite;
+        }
+        /* Desktop: tabs-inner is just a normal block */
+        .tabs-inner {
+          display: block;
+        }
         @media (max-width: 720px) {
           .crossbox-grid {
             grid-template-columns: 1fr !important;
           }
           .crossbox-grid > div:first-child {
             border-right: none !important;
-            display: flex;
-            overflow-x: auto;
-            scrollbar-width: none;
             border-bottom: 1px solid #2a2720;
           }
-          .crossbox-grid > div:first-child button {
+          /* The actual scrollable inner strip */
+          .tabs-inner {
+            display: flex !important;
+            overflow-x: auto !important;
+            scrollbar-width: none !important;
+          }
+          .tabs-inner::-webkit-scrollbar { display: none; }
+          .tabs-inner button {
             border-left: none !important;
             border-bottom: 3px solid transparent !important;
             padding: 14px 20px !important;
-            flex-shrink: 0;
+            flex-shrink: 0 !important;
           }
-          .crossbox-grid > div:first-child button[style*="rgba(183,157,62,0.06)"] {
+          .tabs-inner button[style*="rgba(183,157,62,0.06)"] {
             border-bottom-color: #b79d3e !important;
           }
+          /* Hide hint on desktop */
+          .scroll-hint {
+            display: none;
+          }
+        }
+        @media (min-width: 721px) {
+          .scroll-hint { display: none !important; }
         }
       `}</style>
     </main>
