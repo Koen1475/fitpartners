@@ -29,22 +29,38 @@ const voordelen = [
   "Optioneel: strategische bepaling van wedstrijden en events",
 ];
 
-const placeholderImages = [
-  { src: "/images/DataLab.jpg", pos: "center" },
-  { src: "/images/SportTest.jpg", pos: "center 30%" },
-  { src: "/images/DataLab.jpg", pos: "center 60%" },
-  { src: "/images/SportTest.jpg", pos: "center" },
-];
-
-function ImageGrid({ images }: { images: typeof placeholderImages }) {
+function StaggeredGallery() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 8 }}>
-      {images.map((img, i) => (
-        <div key={i} style={{ position: "relative", height: 200, overflow: "hidden" }}>
-          <Image src={img.src} alt="Sportonderzoek FIT Partners" fill
-            style={{ objectFit: "cover", objectPosition: img.pos, filter: "grayscale(30%) brightness(0.8)" }} />
-        </div>
-      ))}
+    <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr 1fr", gridTemplateRows: "240px 180px", gap: 6 }} className="staggered-gallery">
+      {/* Left: tall, spans 2 rows */}
+      <div style={{ position: "relative", gridRow: "1 / 3", overflow: "hidden" }}>
+        <Image src="/images/DataLab.jpg" alt="Sportonderzoek" fill
+          style={{ objectFit: "cover", objectPosition: "center 30%", filter: "grayscale(100%) brightness(0.75)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(183,157,62,0.08) 0%, transparent 60%)" }} />
+      </div>
+      {/* Middle top */}
+      <div style={{ position: "relative", overflow: "hidden" }}>
+        <Image src="/images/SportTest.jpg" alt="Sportonderzoek" fill
+          style={{ objectFit: "cover", objectPosition: "center 20%", filter: "grayscale(100%) brightness(0.7)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 40%, rgba(12,11,10,0.5))" }} />
+      </div>
+      {/* Right top: offset inward */}
+      <div style={{ position: "relative", overflow: "hidden", marginTop: 32 }}>
+        <Image src="/images/DataLab.jpg" alt="Sportonderzoek" fill
+          style={{ objectFit: "cover", objectPosition: "center 60%", filter: "grayscale(100%) brightness(0.65)" }} />
+        <div style={{ position: "absolute", inset: 0, borderLeft: "3px solid #b79d3e", opacity: 0.4 }} />
+      </div>
+      {/* Middle bottom: offset down */}
+      <div style={{ position: "relative", overflow: "hidden", marginTop: -24 }}>
+        <Image src="/images/SportTest.jpg" alt="Sportonderzoek" fill
+          style={{ objectFit: "cover", objectPosition: "center 70%", filter: "grayscale(100%) brightness(0.8)" }} />
+      </div>
+      {/* Right bottom */}
+      <div style={{ position: "relative", overflow: "hidden" }}>
+        <Image src="/images/DataLab.jpg" alt="Sportonderzoek" fill
+          style={{ objectFit: "cover", objectPosition: "center 40%", filter: "grayscale(100%) brightness(0.6)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(183,157,62,0.06), transparent)" }} />
+      </div>
     </div>
   );
 }
@@ -107,11 +123,11 @@ export default function Sportonderzoeken() {
         </div>
       </section>
 
-      {/* Image grid 1 */}
-      <section style={{ background: "#0c0b0a", padding: "0 24px 72px" }}>
+      {/* Staggered gallery */}
+      <section style={{ background: "#0c0b0a", padding: "0 24px 80px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <Reveal>
-            <ImageGrid images={placeholderImages} />
+            <StaggeredGallery />
           </Reveal>
         </div>
       </section>
@@ -128,15 +144,6 @@ export default function Sportonderzoeken() {
           <Reveal>
             <CheckList items={onderdelen} />
             <div style={{ borderBottom: "1px solid #2a2720" }} />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Image grid 2 */}
-      <section style={{ background: "#131211", padding: "0 24px 72px" }}>
-        <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <Reveal>
-            <ImageGrid images={[...placeholderImages].reverse()} />
           </Reveal>
         </div>
       </section>
@@ -184,6 +191,19 @@ export default function Sportonderzoeken() {
           </Reveal>
         </div>
       </section>
+      <style>{`
+        @media (max-width: 640px) {
+          .staggered-gallery {
+            grid-template-columns: 1fr 1fr !important;
+            grid-template-rows: 180px 180px 180px !important;
+          }
+          .staggered-gallery > div:first-child {
+            grid-row: 1 / 2 !important;
+            grid-column: 1 / 3 !important;
+          }
+          .staggered-gallery > div { margin-top: 0 !important; }
+        }
+      `}</style>
     </main>
   );
 }
