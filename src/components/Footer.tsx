@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const hours = [
   { day: "Maandag",   time: "7:00–12:00 & 16:00–21:30" },
@@ -103,17 +104,18 @@ export default function Footer() {
             ))}
 
             <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners App</h4>
-            {[
-              { label: "Google Play", href: "#" },
-              { label: "App Store", href: "#" },
-            ].map((app) => (
-              <a key={app.label} href={app.href}
-                style={{ display: "block", border: "1px solid #2a2720", color: "#b8b3aa", textDecoration: "none", fontSize: 13, padding: "10px 16px", marginBottom: 10, transition: "border-color 0.2s, color 0.2s" }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#b79d3e"; e.currentTarget.style.color = "#f4efe6"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#2a2720"; e.currentTarget.style.color = "#b8b3aa"; }}>
-                ↓ {app.label}
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              <a href="#" style={{ display: "inline-block", opacity: 0.85, transition: "opacity 0.2s" }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.85")}>
+                <Image src="/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" width={140} height={42} style={{ display: "block" }} />
               </a>
-            ))}
+              <a href="#" style={{ display: "inline-block", opacity: 0.85, transition: "opacity 0.2s" }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.85")}>
+                <Image src="/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" width={140} height={42} style={{ display: "block" }} />
+              </a>
+            </div>
           </div>
 
           {/* Kolom 4 – Kennisbank */}
