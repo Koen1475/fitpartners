@@ -94,11 +94,12 @@ export default function Header() {
         {/* Desktop nav */}
         <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="desktop-nav">
           {nav.map((item) => <DropdownItem key={item.label} item={item} />)}
-          <a href="#contact" style={{ background: "#b79d3e", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
+          <button onClick={() => window.dispatchEvent(new Event("openIntakeModal"))}
+            style={{ background: "#b79d3e", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
             Gratis intake
-          </a>
+          </button>
         </nav>
 
         <button onClick={() => setMobileOpen(!mobileOpen)} className="mobile-menu-btn"
@@ -134,10 +135,10 @@ export default function Header() {
             </div>
           ))}
           <div style={{ padding: "16px 24px 0" }}>
-            <a href="#contact" onClick={() => setMobileOpen(false)}
-              style={{ display: "block", background: "#b79d3e", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", textAlign: "center" }}>
+            <button onClick={() => { setMobileOpen(false); window.dispatchEvent(new Event("openIntakeModal")); }}
+              style={{ display: "block", width: "100%", background: "#b79d3e", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", textAlign: "center" }}>
               Gratis intake
-            </a>
+            </button>
           </div>
         </div>
       )}

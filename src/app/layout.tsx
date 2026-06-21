@@ -3,6 +3,7 @@ import { Anton, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import IntakeModal from "@/components/IntakeModal";
 
 const anton = Anton({
   weight: "400",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <IntakeModal />
       </body>
     </html>
   );
