@@ -49,6 +49,164 @@ export default function RoosterFunctionalTraining() {
           </a>
         </div>
       </section>
+
+      <style>{`
+        /* ── Wrapper ── */
+        #sportbit-rooster .embed-rooster {
+          background: #0c0b0a !important;
+          border: 1px solid #2a2720 !important;
+          border-radius: 0 !important;
+          font-family: 'Montserrat', sans-serif !important;
+          color: #f4efe6 !important;
+          overflow: hidden;
+        }
+
+        /* ── Top bar (week nav) ── */
+        #sportbit-rooster .embed-rooster .top {
+          background: #131211 !important;
+          border-bottom: 1px solid #2a2720 !important;
+          padding: 14px 20px !important;
+          display: flex;
+          align-items: center;
+        }
+        #sportbit-rooster .embed-rooster .top .today a,
+        #sportbit-rooster .embed-rooster .top .week a {
+          background: #b79d3e !important;
+          color: #0c0b0a !important;
+          border: none !important;
+          border-radius: 0 !important;
+          font-weight: 700 !important;
+          font-size: 11px !important;
+          letter-spacing: 0.06em !important;
+          text-transform: uppercase !important;
+          padding: 7px 14px !important;
+        }
+        #sportbit-rooster .embed-rooster .top .week a.inactive {
+          background: #2a2720 !important;
+          color: #4a4540 !important;
+          cursor: default !important;
+        }
+        #sportbit-rooster .embed-rooster .top .period span {
+          color: #a39d92 !important;
+          font-size: 13px !important;
+          letter-spacing: 0.04em !important;
+        }
+        #sportbit-rooster .embed-rooster .top .week span {
+          color: #f4efe6 !important;
+          font-size: 13px !important;
+          font-weight: 600 !important;
+        }
+
+        /* ── Day headers ── */
+        #sportbit-rooster .embed-rooster .days {
+          background: #131211 !important;
+          border-bottom: 2px solid #b79d3e !important;
+        }
+        #sportbit-rooster .embed-rooster .days > div {
+          border-right: 1px solid #2a2720 !important;
+        }
+        #sportbit-rooster .embed-rooster .days .day-name {
+          color: #f4efe6 !important;
+          font-weight: 700 !important;
+          font-size: 11px !important;
+          text-transform: uppercase !important;
+          letter-spacing: 0.08em !important;
+        }
+        #sportbit-rooster .embed-rooster .days .day-month {
+          color: #a39d92 !important;
+          font-size: 11px !important;
+        }
+
+        /* ── Calendar grid ── */
+        #sportbit-rooster .embed-rooster .calendar {
+          background: #0c0b0a !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day {
+          border-right: 1px solid #1e1d1b !important;
+        }
+
+        /* ── Separator labels (Ochtend / Middag / Avond) ── */
+        #sportbit-rooster .embed-rooster .calendar .sepparator {
+          background: #0c0b0a !important;
+          color: #b79d3e !important;
+          font-size: 10px !important;
+          font-weight: 700 !important;
+          letter-spacing: 0.12em !important;
+          text-transform: uppercase !important;
+          border-right: 1px solid #2a2720 !important;
+          border-top: 1px solid #2a2720 !important;
+        }
+
+        /* ── Event items ── */
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem {
+          background: #131211 !important;
+          border-left: 3px solid #b79d3e !important;
+          border-color: #b79d3e !important;
+          border-radius: 0 !important;
+          margin: 3px 6px !important;
+          padding: 7px 10px !important;
+          cursor: pointer !important;
+          transition: background 0.15s, border-color 0.15s !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover {
+          background: #1e1d1b !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd {
+          background: #0f0e0d !important;
+          border-left-color: #3a3530 !important;
+          border-color: #3a3530 !important;
+          opacity: 0.6 !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .title {
+          color: #f4efe6 !important;
+          font-size: 11px !important;
+          font-weight: 700 !important;
+          text-transform: uppercase !important;
+          letter-spacing: 0.04em !important;
+          display: block !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .time {
+          color: #b79d3e !important;
+          font-size: 11px !important;
+          font-weight: 600 !important;
+          display: block !important;
+          margin-top: 2px !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .trainer {
+          color: #6f6a60 !important;
+          font-size: 10px !important;
+          display: block !important;
+          margin-top: 1px !important;
+        }
+
+        /* ── Loading spinner ── */
+        #sportbit-rooster .embed-rooster .loading {
+          background: #0c0b0a !important;
+        }
+        #sportbit-rooster .embed-rooster .loading span {
+          color: #a39d92 !important;
+          font-size: 13px !important;
+        }
+        #sportbit-rooster .embed-rooster .lds-dual-ring:after {
+          border-color: #b79d3e transparent #b79d3e transparent !important;
+        }
+
+        /* ── Popup/modal ── */
+        #sportbit-rooster .embed-rooster .popup,
+        #sportbit-rooster .embed-rooster .popup-overlay {
+          background: #131211 !important;
+          border: 1px solid #2a2720 !important;
+          border-radius: 0 !important;
+          color: #f4efe6 !important;
+        }
+        #sportbit-rooster .embed-rooster .popup .popup-title {
+          color: #f4efe6 !important;
+          font-weight: 700 !important;
+        }
+        #sportbit-rooster .embed-rooster .popup .popup-close {
+          color: #b79d3e !important;
+        }
+      `}</style>
     </main>
   );
 }
