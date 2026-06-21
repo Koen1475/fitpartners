@@ -84,7 +84,7 @@ export default function Crossbox() {
       </section>
 
       {/* Lessen sectie */}
-      <section style={{ background: "#0c0b0a", padding: "80px 24px 96px" }}>
+      <section style={{ background: "#0c0b0a", padding: "80px 24px 96px", overflowX: "hidden" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <Reveal>
             <p style={{ color: "#a39d92", fontSize: 14, marginBottom: 56, lineHeight: 1.7, maxWidth: 680 }}>
@@ -181,15 +181,14 @@ export default function Crossbox() {
       <style>{`
         @keyframes hintBounce {
           0%, 100% { transform: translateY(-50%) translateX(0); }
-          50% { transform: translateY(-50%) translateX(4px); }
+          50% { transform: translateY(-50%) translateX(5px); }
         }
         .hint-arrow {
           animation: hintBounce 1s ease-in-out infinite;
         }
-        /* Desktop: tabs-inner is just a normal block */
-        .tabs-inner {
-          display: block;
-        }
+        .tabs-inner { display: block; width: 100%; }
+        .scroll-hint { display: none; }
+
         @media (max-width: 720px) {
           .crossbox-grid {
             grid-template-columns: 1fr !important;
@@ -197,30 +196,27 @@ export default function Crossbox() {
           .crossbox-grid > div:first-child {
             border-right: none !important;
             border-bottom: 1px solid #2a2720;
+            overflow: hidden;
           }
-          /* The actual scrollable inner strip */
           .tabs-inner {
             display: flex !important;
             overflow-x: auto !important;
             scrollbar-width: none !important;
+            width: 100% !important;
           }
           .tabs-inner::-webkit-scrollbar { display: none; }
           .tabs-inner button {
+            width: auto !important;
             border-left: none !important;
             border-bottom: 3px solid transparent !important;
             padding: 14px 20px !important;
             flex-shrink: 0 !important;
+            white-space: nowrap !important;
           }
           .tabs-inner button[style*="rgba(183,157,62,0.06)"] {
             border-bottom-color: #b79d3e !important;
           }
-          /* Hide hint on desktop */
-          .scroll-hint {
-            display: none;
-          }
-        }
-        @media (min-width: 721px) {
-          .scroll-hint { display: none !important; }
+          .scroll-hint { display: block; }
         }
       `}</style>
     </main>
