@@ -66,7 +66,7 @@ export default function Voedingsadvies() {
                 <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
                   Met intensieve begeleiding gaan we aan de slag. Dat houdt in dat we starten met een intakegesprek waarin jouw
                   eigen waardes worden bepaald. We bespreken jouw doel en verwachtingen voor de komende maanden en maken samen
-                  een persoonlijk en gericht plan. Hoe is jouw leefstijl nu, waar kunnen we al in meedenken — en dat allemaal
+                  een persoonlijk en gericht plan. Hoe is jouw leefstijl nu, waar kunnen we al in meedenken, en dat allemaal
                   met het oog op een duurzaam resultaat.
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function Voedingsadvies() {
                 <p style={{ color: "#a39d92", fontSize: 15, lineHeight: 1.9, margin: 0 }}>
                   We maken tussentijdse afspraken en werken met een gebruiksvriendelijke voedingsapp waarin we jouw waarden goed
                   kunnen bijhouden. Je wordt jezelf bewust van hetgeen wat je eet. Het voordeel is dat we dit kunnen aanbieden
-                  onder één dak. Sport jij bij ons? Dan hebben we ook het beste zicht op jouw energieverbruik — zo blijven we
+                  onder één dak. Sport jij bij ons? Dan hebben we ook het beste zicht op jouw energieverbruik, zo blijven we
                   goed op de hoogte en kunnen we alles optimaal op elkaar afstemmen.
                 </p>
               </div>

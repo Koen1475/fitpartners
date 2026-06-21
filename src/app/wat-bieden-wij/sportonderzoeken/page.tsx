@@ -91,7 +91,7 @@ export default function Sportonderzoeken() {
           </Reveal>
           <Reveal>
             <p style={{ fontSize: 16, color: "#a39d92", lineHeight: 1.9, margin: "0 0 24px" }}>
-              De VO2max, de anaerobe drempel en de bewegingseconomie — belangrijke termen in de sportwereld — zijn allen te
+              De VO2max, de anaerobe drempel en de bewegingseconomie (belangrijke termen in de sportwereld) zijn allen te
               verbeteren door training. Voorwaarde om deze 3 variabelen optimaal te ontwikkelen is het maken van goede keuzes
               in het trainingsprogramma (en eventuele periodisering richting wedstrijden en events). De sportonderzoeken geven
               je inzicht in deze trainingsvariabelen en geven je de richtlijnen om het trainingseffect te optimaliseren.

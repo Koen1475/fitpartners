@@ -11,7 +11,7 @@ const timeline = [
     date: "02 april 2012",
     year: "2012",
     title: "De geboorte",
-    body: "FIT Partners is geboren — toentertijd beter bekend als Wellness Test & Training Deurne. Eigenaar Niek Smits introduceerde met zijn toenmalige compagnon dit unieke concept in de sport- en bewegingsbegeleiding. In samenwerking met Fysiotherapie Rinus Louwers werden de eerste trainingen begeleid op locatie.",
+    body: "FIT Partners is geboren, destijds beter bekend als Wellness Test & Training Deurne. Eigenaar Niek Smits introduceerde met zijn toenmalige compagnon dit unieke concept in de sport- en bewegingsbegeleiding. In samenwerking met Fysiotherapie Rinus Louwers werden de eerste trainingen begeleid op locatie.",
   },
   {
     date: "September 2013",
@@ -71,7 +71,7 @@ export default function WieZijnWe() {
             Wie zijn we?
           </h1>
           <p style={{ color: "#cfc9bd", fontSize: 17, lineHeight: 1.7, maxWidth: 560, margin: 0 }}>
-            Het levensverhaal van FIT Partners — van een klein idee in 2012 tot een volwaardig trainingscentrum in Deurne.
+            Het levensverhaal van FIT Partners: van een klein idee in 2012 tot een volwaardig trainingscentrum in Deurne.
           </p>
         </div>
       </section>
