@@ -18,22 +18,90 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+const BASE = "https://fit-partners.nl";
+
 export const metadata: Metadata = {
-  title: "FIT Partners – Personal Training & Sportonderzoek",
+  metadataBase: new URL(BASE),
+  title: {
+    default: "FIT Partners – Personal Training Studio Deurne",
+    template: "%s | FIT Partners Deurne",
+  },
   description:
-    "Bereik jouw fitnessdoelen met bewezen methoden. Personal training, sportonderzoek en voedingscoaching op maat in een professionele studio.",
-  keywords: "personal training, sportonderzoek, voedingscoaching, fitness, personal trainer",
+    "Personal training, CrossBox, sportonderzoek en voedingsadvies in Deurne. Professionele begeleiding op maat met meetbare resultaten. Plan vandaag je gratis intake.",
+  keywords: [
+    "personal training Deurne",
+    "personal trainer Deurne",
+    "sportonderzoek",
+    "VO2max test",
+    "CrossBox",
+    "functional training",
+    "voedingsadvies",
+    "fitness Deurne",
+    "FIT Partners",
+  ],
+  authors: [{ name: "FIT Partners" }],
+  creator: "FIT Partners",
   openGraph: {
-    title: "FIT Partners – Personal Training & Sportonderzoek",
-    description: "Bereik jouw fitnessdoelen met bewezen methoden. Personal training op maat.",
+    title: "FIT Partners – Personal Training Studio Deurne",
+    description:
+      "Personal training, CrossBox, sportonderzoek en voedingsadvies in Deurne. Professionele begeleiding op maat.",
+    url: BASE,
+    siteName: "FIT Partners",
     locale: "nl_NL",
     type: "website",
+    images: [{ url: "/images/Hero.jpg", width: 1200, height: 630, alt: "FIT Partners – Personal Training Studio Deurne" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "FIT Partners – Personal Training Studio Deurne",
+    description: "Personal training, CrossBox en sportonderzoek in Deurne.",
+    images: ["/images/Hero.jpg"],
+  },
+  alternates: { canonical: BASE },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  name: "FIT Partners",
+  description:
+    "Personal training studio in Deurne. Wij bieden functional training, CrossBox, sportonderzoeken en voedingsadvies op maat.",
+  url: BASE,
+  telephone: "06-14634488",
+  email: "info@fit-partners.nl",
+  image: `${BASE}/images/Hero.jpg`,
+  logo: `${BASE}/images/Logo.png`,
+  priceRange: "€€",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "dr. Huub van Doorneweg 8d",
+    addressLocality: "Deurne",
+    postalCode: "5753 PM",
+    addressCountry: "NL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 51.4598,
+    longitude: 5.8069,
+  },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "21:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "14:00" },
+  ],
+  hasMap: "https://maps.google.com/?q=FIT+Partners+Deurne",
+  sameAs: ["https://www.instagram.com/fitpartnersdeurne/"],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl" className={`${anton.variable} ${montserrat.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
         <Header />
         {children}

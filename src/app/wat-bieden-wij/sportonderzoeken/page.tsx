@@ -3,8 +3,10 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Sportonderzoeken – FIT Partners",
-  description: "Wetenschappelijk sportonderzoek bij FIT Partners. VO2max, anaerobe drempel, lichaamssamenstelling en persoonlijk trainingsadvies.",
+  title: "Sportonderzoek Deurne – VO2max, Anaerobe Drempel & Lichaamssamenstelling",
+  description: "Wetenschappelijk sportonderzoek via ademgasanalyse en lactaatmeting. VO2max, anaerobe drempel, vetverbrandingszones en spierkrachtmeting bij FIT Partners Deurne.",
+  alternates: { canonical: "https://fit-partners.nl/wat-bieden-wij/sportonderzoeken" },
+  openGraph: { title: "Sportonderzoek Deurne | FIT Partners", description: "VO2max meting, anaerobe drempel en lichaamssamenstelling via wetenschappelijke methoden.", type: "website" },
 };
 
 const onderdelen = [

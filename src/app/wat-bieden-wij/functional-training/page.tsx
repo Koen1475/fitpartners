@@ -3,8 +3,10 @@ import Reveal from "@/components/Reveal";
 import { ClipboardList, UserCheck, CalendarCheck, Activity, RefreshCw, TrendingUp, Ruler } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Functional Training – FIT Partners",
-  description: "Persoonlijk trainingsprogramma met meetbare resultaten. Intensieve begeleiding op maat bij FIT Partners in Deurne.",
+  title: "Functional Training Deurne – Personal Training op maat",
+  description: "Personal training met een schema volledig op jouw lichaam en doelen afgestemd. VO2max-gebaseerde begeleiding, 8-weekse programma's en periodieke metingen bij FIT Partners Deurne.",
+  alternates: { canonical: "https://fit-partners.nl/wat-bieden-wij/functional-training" },
+  openGraph: { title: "Functional Training Deurne | FIT Partners", description: "Personal training op maat met meetbare resultaten en wetenschappelijk onderbouwde aanpak.", type: "website" },
 };
 
 const waarom = [
