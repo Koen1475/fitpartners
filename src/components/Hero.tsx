@@ -1,7 +1,7 @@
 "use client";
 export default function Hero() {
   return (
-    <section style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", overflow: "hidden" }}>
+    <section style={{ position: "relative", minHeight: "calc(100vh - 72px)", display: "flex", alignItems: "center", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.35)" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(12,11,10,0.4) 0%, rgba(12,11,10,0.8) 100%)" }} />
 
