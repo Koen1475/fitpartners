@@ -155,10 +155,22 @@ export default function RoosterFunctionalTraining() {
           margin: 3px 6px !important;
           padding: 7px 10px !important;
           cursor: pointer !important;
-          transition: background 0.15s !important;
+          transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover {
-          background: #1e1d1b !important;
+          background: #1a1815 !important;
+          transform: translateX(3px) !important;
+          box-shadow: -3px 0 12px rgba(183, 157, 62, 0.18) !important;
+          border-left-color: #d4b84a !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .title {
+          color: #f4efe6 !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .time {
+          color: #d4b84a !important;
+        }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .trainer {
+          color: #a39d92 !important;
         }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd {
           background: #0f0e0d !important;
