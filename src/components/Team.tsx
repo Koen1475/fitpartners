@@ -43,6 +43,17 @@ export default function Team() {
                   : "linear-gradient(to top, rgba(12,11,10,0.5) 0%, rgba(12,11,10,0) 50%)",
                 transition: "background 0.4s ease",
               }} />
+              {/* Naam + rol — altijd zichtbaar, faded out op hover */}
+              <div style={{
+                position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px",
+                opacity: hovered === t.name ? 0 : 1,
+                transition: "opacity 0.3s ease",
+              }}>
+                <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 20, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 4px" }}>{t.name}</h3>
+                <p style={{ color: "#b8b3aa", fontSize: 13, margin: 0 }}>{t.role}</p>
+              </div>
+
+              {/* Specialisaties — zichtbaar op hover */}
               <div style={{
                 position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 20px",
                 opacity: hovered === t.name ? 1 : 0,
@@ -57,10 +68,6 @@ export default function Team() {
                   </div>
                 ))}
               </div>
-            </div>
-            <div style={{ padding: "16px 0" }}>
-              <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 20, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 4px" }}>{t.name}</h3>
-              <p style={{ color: "#b8b3aa", fontSize: 13, margin: 0 }}>{t.role}</p>
             </div>
           </div>
         ))}
