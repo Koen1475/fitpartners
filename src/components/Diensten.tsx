@@ -29,9 +29,9 @@ export default function Diensten() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
-        {diensten.map((d) => (
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden", position: "relative" }}>
+        <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
+          {diensten.map((d) => (
           <div key={d.title} style={{ flexShrink: 0, width: 320, background: "#131211" }}>
             <div style={{ position: "relative", height: 200, overflow: "hidden" }}>
               <Image src={d.img} alt={d.title} fill style={{ objectFit: "cover", filter: "brightness(0.7)" }} />
@@ -41,8 +41,9 @@ export default function Diensten() {
               <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{d.desc}</p>
             </div>
           </div>
-        ))}
-      </div>
+          ))}
+        </div>
+        <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: 120, background: "linear-gradient(to right, transparent, #0c0b0a)", pointerEvents: "none" }} />
       </div>
     </section>
   );

@@ -30,9 +30,9 @@ export default function Team() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
-        {team.map((t) => (
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden", position: "relative" }}>
+        <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
+          {team.map((t) => (
           <div key={t.name} onMouseEnter={() => setHovered(t.name)} onMouseLeave={() => setHovered(null)}
             style={{ flexShrink: 0, width: 340, position: "relative", cursor: "default" }}>
             <div style={{ position: "relative", height: 460, overflow: "hidden" }}>
@@ -71,8 +71,9 @@ export default function Team() {
               </div>
             </div>
           </div>
-        ))}
-      </div>
+          ))}
+        </div>
+        <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: 120, background: "linear-gradient(to right, transparent, #131211)", pointerEvents: "none" }} />
       </div>
     </section>
   );
