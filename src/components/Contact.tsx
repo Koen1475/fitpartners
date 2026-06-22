@@ -19,7 +19,7 @@ export default function Contact() {
             onMouseLeave={(e) => (e.currentTarget.style.background = "#ffd53b")}>
             Stuur een bericht
           </a>
-          <p style={{ color: "#6f6a60", fontSize: 13, marginTop: 24 }}>Of bel: +31 (0)00 000 00 00</p>
+          <p style={{ color: "#8c8780", fontSize: 13, marginTop: 24 }}>Of bel: +31 (0)00 000 00 00</p>
         </Reveal>
       </div>
     </section>

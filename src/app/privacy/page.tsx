@@ -78,7 +78,7 @@ export default function Privacy() {
           ))}
 
           <div style={{ borderTop: "1px solid #2a2720", paddingTop: 32, marginTop: 8 }}>
-            <p style={{ color: "#6f6a60", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+            <p style={{ color: "#8c8780", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
               FIT Partners — dr. Huub van Doorneweg 8d, 5753 PM Deurne —{" "}
               <a href="mailto:info@fit-partners.nl" style={{ color: "#ffd53b", textDecoration: "none" }}>info@fit-partners.nl</a>
             </p>

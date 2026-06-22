@@ -157,7 +157,7 @@ export default function Header() {
                   </button>
                   {mobileExpanded === item.label && item.children.map((c) => (
                     <Link key={c.href} href={c.href} onClick={() => setMobileOpen(false)}
-                      style={{ display: "block", color: "#6f6a60", textDecoration: "none", padding: "11px 36px", fontSize: 13, borderBottom: "1px solid #1a1917" }}>
+                      style={{ display: "block", color: "#8c8780", textDecoration: "none", padding: "11px 36px", fontSize: 13, borderBottom: "1px solid #1a1917" }}>
                       {c.label}
                     </Link>
                   ))}

@@ -45,7 +45,7 @@ export default function WatIsVO2max() {
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
             <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Sportonderzoek</span>
-            <span style={{ color: "#6f6a60", fontSize: 12 }}>5 min leestijd</span>
+            <span style={{ color: "#8c8780", fontSize: 12 }}>5 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
             Wat is VO2max en waarom is het belangrijk?

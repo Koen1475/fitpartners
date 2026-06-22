@@ -45,7 +45,7 @@ export default function VoedingEnSport() {
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
             <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Voeding</span>
-            <span style={{ color: "#6f6a60", fontSize: 12 }}>6 min leestijd</span>
+            <span style={{ color: "#8c8780", fontSize: 12 }}>6 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
             Voeding en sport: de basis die het verschil maakt
@@ -118,7 +118,7 @@ export default function VoedingEnSport() {
                 }}>
                   <div>
                     <p style={{ color: "#f4efe6", fontSize: 15, fontWeight: 600, margin: "0 0 4px" }}>{phase.moment}</p>
-                    <span style={{ color: "#6f6a60", fontSize: 12 }}>{phase.timing}</span>
+                    <span style={{ color: "#8c8780", fontSize: 12 }}>{phase.timing}</span>
                   </div>
                   <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
                     {phase.tips.map((tip, j) => (

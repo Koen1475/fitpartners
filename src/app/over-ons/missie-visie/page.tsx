@@ -69,7 +69,7 @@ export default function MissieVisie() {
                 <div style={{ padding: "32px 28px", borderTop: "2px solid #ffd53b", background: "#0c0b0a", height: "100%" }}>
                   <span style={{ fontFamily: "var(--font-anton)", fontSize: 36, color: "#ffd53b", opacity: 0.25, display: "block", lineHeight: 1, marginBottom: 16 }}>{p.num}</span>
                   <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 16, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px", letterSpacing: "0.04em" }}>{p.title}</h3>
-                  <p style={{ color: "#6f6a60", fontSize: 13, lineHeight: 1.8, margin: 0 }}>{p.body}</p>
+                  <p style={{ color: "#8c8780", fontSize: 13, lineHeight: 1.8, margin: 0 }}>{p.body}</p>
                 </div>
               </Reveal>
             ))}

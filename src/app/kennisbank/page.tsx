@@ -73,7 +73,7 @@ export default function Kennisbank() {
                   }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                       <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>{a.label}</span>
-                      <span style={{ color: "#6f6a60", fontSize: 12 }}>{a.readTime} leestijd</span>
+                      <span style={{ color: "#8c8780", fontSize: 12 }}>{a.readTime} leestijd</span>
                     </div>
                     <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1.15 }}>
                       {a.title}

@@ -68,13 +68,13 @@ export default function Footer() {
 
           {/* Kolom 2 – Openingstijden */}
           <div>
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Openingstijden</h4>
+            <h3 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Openingstijden</h3>
             <table style={{ borderCollapse: "collapse", width: "100%" }}>
               <tbody>
                 {hours.map(({ day, time }) => (
                   <tr key={day}>
                     <td style={{ color: "#b8b3aa", fontSize: 13, paddingBottom: 7, paddingRight: 16, whiteSpace: "nowrap", verticalAlign: "top" }}>{day}:</td>
-                    <td style={{ color: "#6f6a60", fontSize: 13, paddingBottom: 7, verticalAlign: "top" }}>{time}</td>
+                    <td style={{ color: "#8c8780", fontSize: 13, paddingBottom: 7, verticalAlign: "top" }}>{time}</td>
                   </tr>
                 ))}
               </tbody>
@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Kolom 3 – Social + App */}
           <div>
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Volg ons op</h4>
+            <h3 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Volg ons op</h3>
             {social.map(({ label, href, Icon }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                 style={{ display: "flex", alignItems: "center", gap: 12, color: "#b8b3aa", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
@@ -103,7 +103,7 @@ export default function Footer() {
               </a>
             ))}
 
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners App</h4>
+            <h3 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners App</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               <a href="#" style={{ display: "inline-block", opacity: 0.85, transition: "opacity 0.2s" }}
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
@@ -120,7 +120,7 @@ export default function Footer() {
 
           {/* Kolom 4 – Kennisbank */}
           <div>
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Kennisbank</h4>
+            <h3 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 20px", fontWeight: 700 }}>Kennisbank</h3>
             {[
               { label: "Veelgestelde vragen", href: "/kennisbank/faq" },
               { label: "Wat is VO2max?", href: "/kennisbank/wat-is-vo2max" },
@@ -128,15 +128,15 @@ export default function Footer() {
               { label: "Voeding en sport", href: "/kennisbank/voeding-en-sport" },
             ].map((link) => (
               <a key={link.href} href={link.href}
-                style={{ display: "block", color: "#6f6a60", textDecoration: "none", fontSize: 13, padding: "9px 0", borderBottom: "1px solid #1a1917", transition: "color 0.2s" }}
+                style={{ display: "block", color: "#8c8780", textDecoration: "none", fontSize: 13, padding: "9px 0", borderBottom: "1px solid #1a1917", transition: "color 0.2s" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#8c8780")}>
                 {link.label}
               </a>
             ))}
-            <h4 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners steunt</h4>
+            <h3 style={{ color: "#f4efe6", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", margin: "28px 0 16px", fontWeight: 700 }}>FIT Partners steunt</h3>
             {charities.map((c) => (
-              <div key={c} style={{ color: "#6f6a60", fontSize: 13, padding: "7px 0", borderBottom: "1px solid #1a1917" }}>{c}</div>
+              <div key={c} style={{ color: "#8c8780", fontSize: 13, padding: "7px 0", borderBottom: "1px solid #1a1917" }}>{c}</div>
             ))}
           </div>
 
@@ -144,10 +144,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div style={{ borderTop: "1px solid #2a2720", padding: "20px 0", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
-          <p style={{ color: "#6f6a60", fontSize: 13, margin: 0 }}>© 2026 FIT Partners</p>
-          <a href="/privacy" style={{ color: "#6f6a60", fontSize: 13, textDecoration: "none" }}
+          <p style={{ color: "#8c8780", fontSize: 13, margin: 0 }}>© 2026 FIT Partners</p>
+          <a href="/privacy" style={{ color: "#8c8780", fontSize: 13, textDecoration: "none" }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#8c8780")}>
             Privacyverklaring
           </a>
         </div>

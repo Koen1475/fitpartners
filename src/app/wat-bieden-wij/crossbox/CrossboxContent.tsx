@@ -90,7 +90,7 @@ export default function CrossboxContent() {
                     onMouseEnter={(e) => { if (active !== i) e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
                     onMouseLeave={(e) => { if (active !== i) e.currentTarget.style.background = "transparent"; }}>
                     <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: active === i ? "#ffd53b" : "#2e2c29", letterSpacing: "0.05em", transition: "color 0.25s", lineHeight: 1, flexShrink: 0 }}>{tab.num}</span>
-                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 16, textTransform: "uppercase", letterSpacing: "0.06em", lineHeight: 1.2, color: active === i ? "#f4efe6" : "#6f6a60", transition: "color 0.25s" }}>{tab.label}</span>
+                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 16, textTransform: "uppercase", letterSpacing: "0.06em", lineHeight: 1.2, color: active === i ? "#f4efe6" : "#8c8780", transition: "color 0.25s" }}>{tab.label}</span>
                   </button>
                 ))}
               </div>

@@ -14,9 +14,9 @@ export default function Hero() {
         <h1 className="hero-line-2" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px" }}>
           Train op maat.
         </h1>
-        <h1 className="hero-line-3" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#ffd53b", margin: "0 0 32px" }}>
+        <p className="hero-line-3" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#ffd53b", margin: "0 0 32px" }}>
           Weet wat werkt.
-        </h1>
+        </p>
 
         <p className="hero-line-4" style={{ fontSize: 18, color: "#cfc9bd", maxWidth: 520, lineHeight: 1.6, marginBottom: 40 }}>
           Persoonlijke begeleiding op basis van data. Geen giswerk, meetbare resultaten vanaf dag één.

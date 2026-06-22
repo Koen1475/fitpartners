@@ -176,7 +176,7 @@ export default function IntakeModal() {
                 />
 
                 <div style={{ marginTop: 8, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
-                  <p style={{ color: "#6f6a60", fontSize: 12, margin: 0, lineHeight: 1.5 }}>
+                  <p style={{ color: "#8c8780", fontSize: 12, margin: 0, lineHeight: 1.5 }}>
                     Of bel direct: <a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none" }}>06-14634488</a>
                   </p>
                   <button type="submit" style={{
@@ -202,7 +202,7 @@ export default function IntakeModal() {
       <style>{`
         @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px) } to { opacity: 1; transform: translateY(0) } }
-        input::placeholder, textarea::placeholder { color: #6f6a60; }
+        input::placeholder, textarea::placeholder { color: #8c8780; }
         @media (max-width: 640px) {
           .modal-photo { display: none !important; }
         }

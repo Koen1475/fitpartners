@@ -71,7 +71,7 @@ export default function RoosterFTContent() {
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd { background: #131211 !important; border-left-color: #ffd53b !important; opacity: 1 !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .title { color: #f4efe6 !important; font-size: 11px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.04em !important; display: block !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .time { color: #ffd53b !important; font-size: 11px !important; font-weight: 600 !important; display: block !important; margin-top: 2px !important; }
-        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .trainer { color: #6f6a60 !important; font-size: 10px !important; display: block !important; margin-top: 1px !important; }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .trainer { color: #8c8780 !important; font-size: 10px !important; display: block !important; margin-top: 1px !important; }
         #sportbit-rooster .embed-rooster .loading { background: #0c0b0a !important; }
         #sportbit-rooster .embed-rooster .loading span { color: #b8b3aa !important; font-size: 13px !important; }
         #sportbit-rooster .embed-rooster .lds-dual-ring:after { border-color: #ffd53b transparent #ffd53b transparent !important; }

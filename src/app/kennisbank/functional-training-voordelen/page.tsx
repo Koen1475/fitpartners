@@ -84,7 +84,7 @@ export default function FunctionalTrainingVoordelen() {
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
             <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Training</span>
-            <span style={{ color: "#6f6a60", fontSize: 12 }}>4 min leestijd</span>
+            <span style={{ color: "#8c8780", fontSize: 12 }}>4 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
             7 voordelen van functional training

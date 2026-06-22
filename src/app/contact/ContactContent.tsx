@@ -92,7 +92,7 @@ export default function ContactContent() {
                     {item.icon}
                   </div>
                   <div>
-                    <p style={{ color: "#6f6a60", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 4px" }}>{item.label}</p>
+                    <p style={{ color: "#8c8780", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 4px" }}>{item.label}</p>
                     {item.href ? (
                       <a href={item.href} style={{ color: "#f4efe6", fontSize: 15, textDecoration: "none", lineHeight: 1.6, display: "block", transition: "color 0.2s" }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = "#ffd53b")}
@@ -107,7 +107,7 @@ export default function ContactContent() {
               ))}
 
               <div style={{ marginTop: 48, paddingTop: 40, borderTop: "1px solid #2a2720" }}>
-                <p style={{ color: "#6f6a60", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 16px" }}>Direct inloggen</p>
+                <p style={{ color: "#8c8780", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 16px" }}>Direct inloggen</p>
                 <a href="https://fitpartners.sportbitapp.nl/web/nl/" target="_blank" rel="noopener noreferrer"
                   style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "#ffd53b", fontSize: 14, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em", textTransform: "uppercase", transition: "opacity 0.2s" }}
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
@@ -134,14 +134,14 @@ export default function ContactContent() {
                   <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px", lineHeight: 1 }}>Stuur een bericht</h2>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }} className="form-2col">
                     <div>
-                      <label style={{ display: "block", color: "#6f6a60", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Naam *</label>
+                      <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Naam *</label>
                       <input required type="text" value={form.naam} onChange={(e) => setForm({ ...form, naam: e.target.value })}
                         style={inputStyle}
                         onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
                         onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                     </div>
                     <div>
-                      <label style={{ display: "block", color: "#6f6a60", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>E-mailadres *</label>
+                      <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>E-mailadres *</label>
                       <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
                         style={inputStyle}
                         onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
@@ -149,14 +149,14 @@ export default function ContactContent() {
                     </div>
                   </div>
                   <div>
-                    <label style={{ display: "block", color: "#6f6a60", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Onderwerp *</label>
+                    <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Onderwerp *</label>
                     <input required type="text" value={form.onderwerp} onChange={(e) => setForm({ ...form, onderwerp: e.target.value })}
                       style={inputStyle}
                       onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
                       onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                   </div>
                   <div>
-                    <label style={{ display: "block", color: "#6f6a60", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Bericht *</label>
+                    <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Bericht *</label>
                     <textarea required rows={6} value={form.bericht} onChange={(e) => setForm({ ...form, bericht: e.target.value })}
                       style={{ ...inputStyle, resize: "vertical" }}
                       onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
