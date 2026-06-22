@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | FIT Partners Deurne",
   },
   description:
-    "Personal training, CrossBox, sportonderzoek en voedingsadvies in Deurne. Professionele begeleiding op maat met meetbare resultaten. Plan vandaag je gratis intake.",
+    "Personal training, CrossBox en sportonderzoek in Deurne. Professionele begeleiding op maat met meetbare resultaten. Plan je gratis intake.",
   keywords: [
     "personal training Deurne",
     "personal trainer Deurne",
