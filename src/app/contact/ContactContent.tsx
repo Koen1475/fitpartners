@@ -68,7 +68,7 @@ export default function ContactContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 25%", filter: "brightness(0.18)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 60%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 56px", width: "100%" }}>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>FIT Partners</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>FIT Partners</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>
             Contact
           </h1>
@@ -88,14 +88,14 @@ export default function ContactContent() {
 
               {info.map((item) => (
                 <div key={item.label} style={{ display: "flex", gap: 20, marginBottom: 32 }}>
-                  <div style={{ width: 44, height: 44, border: "1px solid #2a2720", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "#ffd53b" }}>
+                  <div style={{ width: 44, height: 44, border: "1px solid #2a2720", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "#BC9C22" }}>
                     {item.icon}
                   </div>
                   <div>
                     <p style={{ color: "#8c8780", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 4px" }}>{item.label}</p>
                     {item.href ? (
                       <a href={item.href} style={{ color: "#f4efe6", fontSize: 15, textDecoration: "none", lineHeight: 1.6, display: "block", transition: "color 0.2s" }}
-                        onMouseEnter={(e) => (e.currentTarget.style.color = "#ffd53b")}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = "#BC9C22")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#f4efe6")}>
                         {item.value}
                       </a>
@@ -109,7 +109,7 @@ export default function ContactContent() {
               <div style={{ marginTop: 48, paddingTop: 40, borderTop: "1px solid #2a2720" }}>
                 <p style={{ color: "#8c8780", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 16px" }}>Direct inloggen</p>
                 <a href="https://fitpartners.sportbitapp.nl/web/nl/" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "#ffd53b", fontSize: 14, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em", textTransform: "uppercase", transition: "opacity 0.2s" }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "#BC9C22", fontSize: 14, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em", textTransform: "uppercase", transition: "opacity 0.2s" }}
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
                   Leden login →
@@ -123,7 +123,7 @@ export default function ContactContent() {
             <div style={{ background: "#131211", border: "1px solid #2a2720", padding: "48px 44px" }} className="contact-form-box">
               {sent ? (
                 <div style={{ textAlign: "center", padding: "40px 0" }}>
-                  <div style={{ width: 56, height: 56, border: "2px solid #ffd53b", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px", color: "#ffd53b" }}>
+                  <div style={{ width: 56, height: 56, border: "2px solid #BC9C22", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px", color: "#BC9C22" }}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
                   </div>
                   <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px" }}>Verstuurd</h2>
@@ -137,14 +137,14 @@ export default function ContactContent() {
                       <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Naam *</label>
                       <input required type="text" value={form.naam} onChange={(e) => setForm({ ...form, naam: e.target.value })}
                         style={inputStyle}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "#BC9C22")}
                         onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                     </div>
                     <div>
                       <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>E-mailadres *</label>
                       <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
                         style={inputStyle}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "#BC9C22")}
                         onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                     </div>
                   </div>
@@ -152,18 +152,18 @@ export default function ContactContent() {
                     <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Onderwerp *</label>
                     <input required type="text" value={form.onderwerp} onChange={(e) => setForm({ ...form, onderwerp: e.target.value })}
                       style={inputStyle}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "#BC9C22")}
                       onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                   </div>
                   <div>
                     <label style={{ display: "block", color: "#8c8780", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>Bericht *</label>
                     <textarea required rows={6} value={form.bericht} onChange={(e) => setForm({ ...form, bericht: e.target.value })}
                       style={{ ...inputStyle, resize: "vertical" }}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "#BC9C22")}
                       onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2720")} />
                   </div>
                   <button type="submit"
-                    style={{ background: "#ffd53b", color: "#0c0b0a", padding: "15px 36px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", alignSelf: "flex-start", transition: "opacity 0.2s" }}
+                    style={{ background: "#BC9C22", color: "#0c0b0a", padding: "15px 36px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", alignSelf: "flex-start", transition: "opacity 0.2s" }}
                     onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
                     onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
                     Versturen

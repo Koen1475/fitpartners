@@ -40,11 +40,11 @@ export default function VoedingEnSport() {
       {/* Hero */}
       <section style={{ background: "#131211", padding: "100px 24px 64px", borderBottom: "1px solid #2a2720" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
-          <Link href="/kennisbank" style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
+          <Link href="/kennisbank" style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
             ← Kennisbank
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
-            <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Voeding</span>
+            <span style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Voeding</span>
             <span style={{ color: "#8c8780", fontSize: 12 }}>6 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
@@ -81,7 +81,7 @@ export default function VoedingEnSport() {
                 <div key={m.name} style={{ background: "#131211", border: "1px solid #2a2720", padding: "24px 28px", display: "grid", gridTemplateColumns: "160px 1fr", gap: 24, alignItems: "start" }}>
                   <div>
                     <p style={{ color: "#f4efe6", fontSize: 15, fontWeight: 700, margin: "0 0 4px" }}>{m.name}</p>
-                    <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700 }}>{m.role}</span>
+                    <span style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700 }}>{m.role}</span>
                   </div>
                   <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 1.8, margin: 0 }}>{m.body}</p>
                 </div>
@@ -123,7 +123,7 @@ export default function VoedingEnSport() {
                   <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
                     {phase.tips.map((tip, j) => (
                       <li key={j} style={{ display: "flex", gap: 12, color: "#b8b3aa", fontSize: 14, lineHeight: 1.7, marginBottom: 6 }}>
-                        <span style={{ color: "#ffd53b", flexShrink: 0 }}>–</span>
+                        <span style={{ color: "#BC9C22", flexShrink: 0 }}>–</span>
                         {tip}
                       </li>
                     ))}
@@ -134,7 +134,7 @@ export default function VoedingEnSport() {
           </Reveal>
 
           <Reveal>
-            <div style={{ background: "#131211", border: "1px solid #2a2720", borderLeft: "4px solid #ffd53b", padding: "28px 32px", margin: "0 0 56px" }}>
+            <div style={{ background: "#131211", border: "1px solid #2a2720", borderLeft: "4px solid #BC9C22", padding: "28px 32px", margin: "0 0 56px" }}>
               <p style={{ color: "#cfc9bd", fontSize: 17, lineHeight: 1.8, margin: "0 0 8px", fontWeight: 600 }}>
                 Onthoud dit:
               </p>
@@ -157,7 +157,7 @@ export default function VoedingEnSport() {
                 "Vertrouwen op supplementen in plaats van een gevarieerd voedingspatroon als basis",
               ].map((fout, i) => (
                 <li key={i} style={{ display: "flex", gap: 16, padding: "13px 0", borderBottom: "1px solid #2a2720", color: "#cfc9bd", fontSize: 15, lineHeight: 1.5 }}>
-                  <span style={{ color: "#ffd53b", fontWeight: 700, flexShrink: 0 }}>✗</span>
+                  <span style={{ color: "#BC9C22", fontWeight: 700, flexShrink: 0 }}>✗</span>
                   {fout}
                 </li>
               ))}
@@ -165,15 +165,15 @@ export default function VoedingEnSport() {
           </Reveal>
 
           <Reveal>
-            <div style={{ background: "#131211", border: "1px solid #ffd53b", padding: "36px 40px", textAlign: "center" }}>
-              <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Persoonlijk voedingsadvies</p>
+            <div style={{ background: "#131211", border: "1px solid #BC9C22", padding: "36px 40px", textAlign: "center" }}>
+              <p style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Persoonlijk voedingsadvies</p>
               <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px" }}>
                 Maak het concreet voor jou
               </h3>
               <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.7, margin: "0 0 28px" }}>
                 Bij FIT Partners integreren we voedingsadvies in jouw persoonlijk trainingsprogramma. Zo werkt alles samen.
               </p>
-              <Link href="/wat-bieden-wij/voedingsadvies" style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              <Link href="/wat-bieden-wij/voedingsadvies" style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
                 Meer over voedingsadvies
               </Link>
             </div>

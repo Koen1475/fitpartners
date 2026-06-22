@@ -66,7 +66,7 @@ export default function WieZijnWe() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Niek.jpg)", backgroundSize: "cover", backgroundPosition: "center 20%", filter: "brightness(0.18)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Over ons</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Over ons</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>
             Wie zijn we?
           </h1>
@@ -81,7 +81,7 @@ export default function WieZijnWe() {
         <div style={{ maxWidth: 800, margin: "0 auto", position: "relative" }}>
 
           {/* Vertical line */}
-          <div style={{ position: "absolute", left: 52, top: 0, bottom: 0, width: 1, background: "linear-gradient(to bottom, transparent, #ffd53b 8%, #ffd53b 92%, transparent)" }} />
+          <div style={{ position: "absolute", left: 52, top: 0, bottom: 0, width: 1, background: "linear-gradient(to bottom, transparent, #BC9C22 8%, #BC9C22 92%, transparent)" }} />
 
           <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
             {timeline.map((item, i) => (
@@ -94,14 +94,14 @@ export default function WieZijnWe() {
                       width: item.milestone ? 18 : 12,
                       height: item.milestone ? 18 : 12,
                       borderRadius: "50%",
-                      background: item.milestone ? "#ffd53b" : "#0c0b0a",
-                      border: `2px solid #ffd53b`,
+                      background: item.milestone ? "#BC9C22" : "#0c0b0a",
+                      border: `2px solid #BC9C22`,
                       flexShrink: 0,
                       zIndex: 1,
                       boxShadow: item.milestone ? "0 0 16px rgba(183,157,62,0.5)" : "none",
                       marginBottom: 10,
                     }} />
-                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: "#ffd53b", letterSpacing: "0.04em", writingMode: "vertical-lr", transform: "rotate(180deg)", lineHeight: 1 }}>
+                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: "#BC9C22", letterSpacing: "0.04em", writingMode: "vertical-lr", transform: "rotate(180deg)", lineHeight: 1 }}>
                       {item.year}
                     </span>
                   </div>
@@ -109,12 +109,12 @@ export default function WieZijnWe() {
                   {/* Content */}
                   <div style={{
                     background: item.milestone ? "#131211" : "transparent",
-                    border: item.milestone ? "1px solid #ffd53b" : "none",
-                    borderLeft: item.milestone ? `3px solid #ffd53b` : "none",
+                    border: item.milestone ? "1px solid #BC9C22" : "none",
+                    borderLeft: item.milestone ? `3px solid #BC9C22` : "none",
                     padding: item.milestone ? "28px 32px" : "0 0 0 4px",
                     flex: 1,
                   }}>
-                    <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 700 }}>
+                    <p style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 700 }}>
                       {item.date}
                     </p>
                     <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px", lineHeight: 1.1 }}>
@@ -125,8 +125,8 @@ export default function WieZijnWe() {
                     </p>
                     {item.milestone && (
                       <div style={{ marginTop: 20, display: "inline-flex", alignItems: "center", gap: 8 }}>
-                        <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ffd53b", display: "inline-block" }} />
-                        <span style={{ color: "#ffd53b", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>Mijlpaal</span>
+                        <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#BC9C22", display: "inline-block" }} />
+                        <span style={{ color: "#BC9C22", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>Mijlpaal</span>
                       </div>
                     )}
                   </div>
@@ -148,7 +148,7 @@ export default function WieZijnWe() {
               Kom kennismaken en ontdek wat FIT Partners voor jou kan betekenen.
             </p>
             <a href="tel:06-14634488"
-              style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "15px 40px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "15px 40px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
               Gratis intake plannen
             </a>
           </Reveal>

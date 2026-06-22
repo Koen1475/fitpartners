@@ -14,11 +14,11 @@ export default function Voedingsadvies() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/DataLab.jpg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.22)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>
             Voedingsadvies
           </h1>
-          <p style={{ color: "#ffd53b", fontSize: 20, fontStyle: "italic", margin: 0 }}>
+          <p style={{ color: "#BC9C22", fontSize: 20, fontStyle: "italic", margin: 0 }}>
             &lsquo;Weet wat je eet!&rsquo;
           </p>
         </div>
@@ -28,8 +28,8 @@ export default function Voedingsadvies() {
       <section style={{ background: "#131211", padding: "72px 24px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <Reveal>
-            <div style={{ borderLeft: "3px solid #ffd53b", paddingLeft: 28, marginBottom: 48 }}>
-              <p style={{ fontSize: 13, color: "#ffd53b", letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 12px", fontWeight: 700 }}>Ons motto</p>
+            <div style={{ borderLeft: "3px solid #BC9C22", paddingLeft: 28, marginBottom: 48 }}>
+              <p style={{ fontSize: 13, color: "#BC9C22", letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 12px", fontWeight: 700 }}>Ons motto</p>
               <p style={{ fontSize: 21, color: "#cfc9bd", lineHeight: 1.7, margin: 0, fontWeight: 300 }}>
                 Naast ons motto: &lsquo;weet wat je beweegt&rsquo;, maken we ons hard voor &lsquo;weet wat je eet&rsquo;.
               </p>
@@ -58,8 +58,8 @@ export default function Voedingsadvies() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 2 }}>
 
             <Reveal delay={1}>
-              <div style={{ background: "#131211", padding: "44px 40px", borderTop: "2px solid #ffd53b", height: "100%" }}>
-                <div style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: "#ffd53b", opacity: 0.2, lineHeight: 1, marginBottom: 20 }}>01</div>
+              <div style={{ background: "#131211", padding: "44px 40px", borderTop: "2px solid #BC9C22", height: "100%" }}>
+                <div style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: "#BC9C22", opacity: 0.2, lineHeight: 1, marginBottom: 20 }}>01</div>
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px" }}>
                   Persoonlijk plan
                 </h2>
@@ -73,8 +73,8 @@ export default function Voedingsadvies() {
             </Reveal>
 
             <Reveal delay={2}>
-              <div style={{ background: "#131211", padding: "44px 40px", borderTop: "2px solid #ffd53b", height: "100%" }}>
-                <div style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: "#ffd53b", opacity: 0.2, lineHeight: 1, marginBottom: 20 }}>02</div>
+              <div style={{ background: "#131211", padding: "44px 40px", borderTop: "2px solid #BC9C22", height: "100%" }}>
+                <div style={{ fontFamily: "var(--font-anton)", fontSize: 48, color: "#BC9C22", opacity: 0.2, lineHeight: 1, marginBottom: 20 }}>02</div>
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px" }}>
                   Alles onder één dak
                 </h2>
@@ -100,11 +100,11 @@ export default function Voedingsadvies() {
             </h2>
             <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
-              <a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
+              <a href="tel:06-14634488" style={{ color: "#BC9C22", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.
             </p>
             <a href="mailto:info@fit-partners.nl?subject=Aanvraag intake Voedingsadvies"
-              style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
               Aanvraag intake
             </a>
           </Reveal>

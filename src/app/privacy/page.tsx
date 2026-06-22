@@ -51,7 +51,7 @@ export default function Privacy() {
     <main>
       <section style={{ background: "#131211", padding: "100px 24px 64px", borderBottom: "1px solid #2a2720" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 16px" }}>FIT Partners</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 16px" }}>FIT Partners</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>
             Privacyverklaring
           </h1>
@@ -65,7 +65,7 @@ export default function Privacy() {
         <div style={{ maxWidth: 760, margin: "0 auto", display: "flex", flexDirection: "column", gap: 48 }}>
           {sections.map((s, i) => (
             <div key={i} style={{ display: "grid", gridTemplateColumns: "32px 1fr", gap: "0 24px", alignItems: "start" }}>
-              <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: "#ffd53b", opacity: 0.5, paddingTop: 3 }}>
+              <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: "#BC9C22", opacity: 0.5, paddingTop: 3 }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
@@ -80,7 +80,7 @@ export default function Privacy() {
           <div style={{ borderTop: "1px solid #2a2720", paddingTop: 32, marginTop: 8 }}>
             <p style={{ color: "#8c8780", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
               FIT Partners — dr. Huub van Doorneweg 8d, 5753 PM Deurne —{" "}
-              <a href="mailto:info@fit-partners.nl" style={{ color: "#ffd53b", textDecoration: "none" }}>info@fit-partners.nl</a>
+              <a href="mailto:info@fit-partners.nl" style={{ color: "#BC9C22", textDecoration: "none" }}>info@fit-partners.nl</a>
             </p>
           </div>
         </div>

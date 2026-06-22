@@ -50,7 +50,7 @@ function DropdownItem({ item }: { item: NavItem }) {
     return (
       <Link href={item.href!}
         style={{ color: "#b8b3aa", textDecoration: "none", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, whiteSpace: "nowrap" }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = "#ffd53b")}
+        onMouseEnter={(e) => (e.currentTarget.style.color = "#BC9C22")}
         onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
         {item.label}
       </Link>
@@ -59,12 +59,12 @@ function DropdownItem({ item }: { item: NavItem }) {
 
   return (
     <div style={{ position: "relative" }} onMouseEnter={show} onMouseLeave={hide}>
-      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#ffd53b" : "#b8b3aa", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
+      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#BC9C22" : "#b8b3aa", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
         {item.label}
         <span style={{ fontSize: 9, transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s", display: "inline-block" }}>▼</span>
       </button>
       {open && (
-        <div style={{ position: "absolute", top: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", background: "#131211", border: "1px solid #2a2720", borderTop: "2px solid #ffd53b", minWidth: 200, zIndex: 100, padding: "8px 0" }}>
+        <div style={{ position: "absolute", top: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", background: "#131211", border: "1px solid #2a2720", borderTop: "2px solid #BC9C22", minWidth: 200, zIndex: 100, padding: "8px 0" }}>
           {item.children.map((c) => (
             <Link key={c.href} href={c.href}
               style={{ display: "block", color: "#b8b3aa", textDecoration: "none", fontSize: 13, padding: "10px 20px", whiteSpace: "nowrap", transition: "color 0.15s, background 0.15s" }}
@@ -86,7 +86,7 @@ export default function Header({ logo }: { logo: React.ReactNode }) {
   return (
     <header style={{ position: "sticky", top: 0, zIndex: 50 }}>
       {/* Topbar */}
-      <div style={{ background: "#ffd53b" }}>
+      <div style={{ background: "#BC9C22" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", height: 36, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
             <a href="tel:06-14634488" style={{ color: "#0c0b0a", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, opacity: 0.75, transition: "opacity 0.2s" }}
@@ -128,7 +128,7 @@ export default function Header({ logo }: { logo: React.ReactNode }) {
         <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="desktop-nav">
           {nav.map((item) => <DropdownItem key={item.label} item={item} />)}
           <button onClick={() => window.dispatchEvent(new Event("openIntakeModal"))}
-            style={{ background: "#ffd53b", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
+            style={{ background: "#BC9C22", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
             Gratis intake
@@ -169,7 +169,7 @@ export default function Header({ logo }: { logo: React.ReactNode }) {
           ))}
           <div style={{ padding: "16px 24px 0" }}>
             <button onClick={() => { setMobileOpen(false); window.dispatchEvent(new Event("openIntakeModal")); }}
-              style={{ display: "block", width: "100%", background: "#ffd53b", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", textAlign: "center" }}>
+              style={{ display: "block", width: "100%", background: "#BC9C22", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", textAlign: "center" }}>
               Gratis intake
             </button>
           </div>

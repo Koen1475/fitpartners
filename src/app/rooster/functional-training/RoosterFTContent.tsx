@@ -20,7 +20,7 @@ export default function RoosterFTContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 30%", filter: "brightness(0.2)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 56px", width: "100%" }}>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Rooster</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Rooster</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>
             Functional Training
           </h1>
@@ -42,7 +42,7 @@ export default function RoosterFTContent() {
           <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.8, marginBottom: 28 }}>
             Wil je een afspraak inplannen of heb je vragen over het rooster?
           </p>
-          <a href="tel:06-14634488" style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "14px 36px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+          <a href="tel:06-14634488" style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "14px 36px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
             Bel 06-14634488
           </a>
         </div>
@@ -51,33 +51,33 @@ export default function RoosterFTContent() {
       <style>{`
         #sportbit-rooster .embed-rooster { background: #0c0b0a !important; border: 1px solid #2a2720 !important; border-radius: 0 !important; font-family: 'Montserrat', sans-serif !important; color: #f4efe6 !important; overflow: hidden; }
         #sportbit-rooster .embed-rooster .top { background: #131211 !important; border-bottom: 1px solid #2a2720 !important; padding: 14px 20px !important; display: flex; align-items: center; }
-        #sportbit-rooster .embed-rooster .top .today a, #sportbit-rooster .embed-rooster .top .week a { background: #ffd53b !important; color: #0c0b0a !important; border: none !important; border-radius: 0 !important; font-weight: 700 !important; font-size: 11px !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; padding: 7px 14px !important; }
+        #sportbit-rooster .embed-rooster .top .today a, #sportbit-rooster .embed-rooster .top .week a { background: #BC9C22 !important; color: #0c0b0a !important; border: none !important; border-radius: 0 !important; font-weight: 700 !important; font-size: 11px !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; padding: 7px 14px !important; }
         #sportbit-rooster .embed-rooster .top .week a.inactive { background: #2a2720 !important; color: #4a4540 !important; cursor: default !important; }
         #sportbit-rooster .embed-rooster .top .period, #sportbit-rooster .embed-rooster .top #sportbit-periode { background: #1e1d1b !important; border: 1px solid #2a2720 !important; border-radius: 0 !important; padding: 6px 20px !important; }
         #sportbit-rooster .embed-rooster .top .period span { color: #f4efe6 !important; font-size: 13px !important; font-weight: 600 !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; }
         #sportbit-rooster .embed-rooster .top .week span { color: #f4efe6 !important; font-size: 13px !important; font-weight: 600 !important; }
-        #sportbit-rooster .embed-rooster .days { background: #131211 !important; border-bottom: 2px solid #ffd53b !important; }
+        #sportbit-rooster .embed-rooster .days { background: #131211 !important; border-bottom: 2px solid #BC9C22 !important; }
         #sportbit-rooster .embed-rooster .days > div { border-right: 1px solid #2a2720 !important; }
         #sportbit-rooster .embed-rooster .days .day-name { color: #f4efe6 !important; font-weight: 700 !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 0.08em !important; }
         #sportbit-rooster .embed-rooster .days .day-month { color: #b8b3aa !important; font-size: 11px !important; }
         #sportbit-rooster .embed-rooster .calendar { background: #0c0b0a !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day { border-right: 1px solid #1e1d1b !important; }
-        #sportbit-rooster .embed-rooster .calendar .sepparator { background: #0c0b0a !important; color: #ffd53b !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; border-right: 1px solid #2a2720 !important; border-top: 1px solid #2a2720 !important; }
-        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem { background: #131211 !important; border: none !important; border-left: 4px solid #ffd53b !important; border-radius: 0 !important; margin: 3px 6px !important; padding: 7px 10px !important; cursor: pointer !important; transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease !important; }
+        #sportbit-rooster .embed-rooster .calendar .sepparator { background: #0c0b0a !important; color: #BC9C22 !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; border-right: 1px solid #2a2720 !important; border-top: 1px solid #2a2720 !important; }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem { background: #131211 !important; border: none !important; border-left: 4px solid #BC9C22 !important; border-radius: 0 !important; margin: 3px 6px !important; padding: 7px 10px !important; cursor: pointer !important; transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover { background: #1a1815 !important; transform: translateX(3px) !important; box-shadow: -3px 0 12px rgba(183,157,62,0.18) !important; border-left-color: #d4b84a !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .title { color: #f4efe6 !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .time { color: #d4b84a !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem:hover .trainer { color: #b8b3aa !important; }
-        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd { background: #131211 !important; border-left-color: #ffd53b !important; opacity: 1 !important; }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem.gepasseerd { background: #131211 !important; border-left-color: #BC9C22 !important; opacity: 1 !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .title { color: #f4efe6 !important; font-size: 11px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.04em !important; display: block !important; }
-        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .time { color: #ffd53b !important; font-size: 11px !important; font-weight: 600 !important; display: block !important; margin-top: 2px !important; }
+        #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .time { color: #BC9C22 !important; font-size: 11px !important; font-weight: 600 !important; display: block !important; margin-top: 2px !important; }
         #sportbit-rooster .embed-rooster .calendar .items-day div.evtitem .trainer { color: #8c8780 !important; font-size: 10px !important; display: block !important; margin-top: 1px !important; }
         #sportbit-rooster .embed-rooster .loading { background: #0c0b0a !important; }
         #sportbit-rooster .embed-rooster .loading span { color: #b8b3aa !important; font-size: 13px !important; }
-        #sportbit-rooster .embed-rooster .lds-dual-ring:after { border-color: #ffd53b transparent #ffd53b transparent !important; }
+        #sportbit-rooster .embed-rooster .lds-dual-ring:after { border-color: #BC9C22 transparent #BC9C22 transparent !important; }
         #sportbit-rooster .embed-rooster .popup, #sportbit-rooster .embed-rooster .popup-overlay { background: #131211 !important; border: 1px solid #2a2720 !important; border-radius: 0 !important; color: #f4efe6 !important; }
         #sportbit-rooster .embed-rooster .popup .popup-title { color: #f4efe6 !important; font-weight: 700 !important; }
-        #sportbit-rooster .embed-rooster .popup .popup-close { color: #ffd53b !important; }
+        #sportbit-rooster .embed-rooster .popup .popup-close { color: #BC9C22 !important; }
       `}</style>
     </main>
   );

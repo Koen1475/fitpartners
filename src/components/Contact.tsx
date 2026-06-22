@@ -6,7 +6,7 @@ export default function Contact() {
     <section id="contact" style={{ background: "#131211", padding: "120px 24px", textAlign: "center" }}>
       <div style={{ maxWidth: 640, margin: "0 auto" }}>
         <Reveal>
-          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>Stap 1</p>
+          <p style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 24 }}>Stap 1</p>
           <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1 }}>
             Gratis intake
           </h2>
@@ -14,9 +14,9 @@ export default function Contact() {
             Maak een afspraak voor een vrijblijvende kennismaking. We bespreken jouw doelen en laten je de studio zien.
           </p>
           <a href="mailto:info@fit-partners.nl?subject=Gratis intake aanvragen"
-            style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "18px 48px", fontWeight: 700, fontSize: 14, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", transition: "background 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "#e6c035")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "#ffd53b")}>
+            style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "18px 48px", fontWeight: 700, fontSize: 14, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", transition: "background 0.2s" }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "#a8891e")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "#BC9C22")}>
             Stuur een bericht
           </a>
           <p style={{ color: "#8c8780", fontSize: 13, marginTop: 24 }}>Of bel: +31 (0)00 000 00 00</p>

@@ -16,14 +16,14 @@ export default function Hero() {
 
       <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px", width: "100%" }}>
         <div className="hero-line-1" style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 24 }}>
-          <span style={{ color: "#ffd53b", fontSize: 18 }}>★★★★★</span>
+          <span style={{ color: "#BC9C22", fontSize: 18 }}>★★★★★</span>
           <span style={{ color: "#b8b3aa", fontSize: 14 }}>5.0 · 40+ beoordelingen</span>
         </div>
 
         <h1 className="hero-line-2" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px" }}>
           Train op maat.
         </h1>
-        <p className="hero-line-3" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#ffd53b", margin: "0 0 32px" }}>
+        <p className="hero-line-3" style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 8vw, 96px)", lineHeight: 1, textTransform: "uppercase", color: "#BC9C22", margin: "0 0 32px" }}>
           Weet wat werkt.
         </p>
 

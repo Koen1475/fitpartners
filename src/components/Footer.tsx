@@ -47,7 +47,7 @@ const social = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#0c0b0a", borderTop: "2px solid #ffd53b", padding: "64px 24px 0" }}>
+    <footer style={{ background: "#0c0b0a", borderTop: "2px solid #BC9C22", padding: "64px 24px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 48, paddingBottom: 56 }}>
 
@@ -58,7 +58,7 @@ export default function Footer() {
               dr. Huub van Doorneweg 8d<br />
               5753 PM Deurne<br />
               <a href="tel:06-14634488" style={{ color: "#b8b3aa", textDecoration: "none" }}>T: 06-14634488</a><br />
-              <a href="mailto:info@fit-partners.nl" style={{ color: "#ffd53b", textDecoration: "none" }}
+              <a href="mailto:info@fit-partners.nl" style={{ color: "#BC9C22", textDecoration: "none" }}
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
                 onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
                 E: info@fit-partners.nl
@@ -87,14 +87,14 @@ export default function Footer() {
             {social.map(({ label, href, Icon }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                 style={{ display: "flex", alignItems: "center", gap: 12, color: "#b8b3aa", textDecoration: "none", fontSize: 14, marginBottom: 12, transition: "color 0.2s" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffd53b")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#BC9C22")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
                 <span style={{
                   width: 32, height: 32, border: "1px solid #2a2720",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   flexShrink: 0, transition: "border-color 0.2s",
                 }}
-                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#ffd53b")}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#BC9C22")}
                   onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#2a2720")}
                 >
                   <Icon />

@@ -79,11 +79,11 @@ export default function FunctionalTrainingVoordelen() {
       {/* Hero */}
       <section style={{ background: "#131211", padding: "100px 24px 64px", borderBottom: "1px solid #2a2720" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
-          <Link href="/kennisbank" style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
+          <Link href="/kennisbank" style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
             ← Kennisbank
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
-            <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Training</span>
+            <span style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Training</span>
             <span style={{ color: "#8c8780", fontSize: 12 }}>4 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
@@ -107,7 +107,7 @@ export default function FunctionalTrainingVoordelen() {
           {voordelen.map((v, i) => (
             <Reveal key={i}>
               <div style={{ display: "flex", gap: 28, marginBottom: 48, paddingBottom: 48, borderBottom: "1px solid #2a2720" }}>
-                <span style={{ fontFamily: "var(--font-anton)", fontSize: 40, color: "#ffd53b", opacity: 0.35, lineHeight: 1, flexShrink: 0, width: 52 }}>{v.nr}</span>
+                <span style={{ fontFamily: "var(--font-anton)", fontSize: 40, color: "#BC9C22", opacity: 0.35, lineHeight: 1, flexShrink: 0, width: 52 }}>{v.nr}</span>
                 <div>
                   <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 14px", lineHeight: 1.15 }}>
                     {v.title}
@@ -119,8 +119,8 @@ export default function FunctionalTrainingVoordelen() {
           ))}
 
           <Reveal>
-            <div style={{ background: "#131211", border: "1px solid #ffd53b", padding: "36px 40px", textAlign: "center" }}>
-              <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Klaar om te starten?</p>
+            <div style={{ background: "#131211", border: "1px solid #BC9C22", padding: "36px 40px", textAlign: "center" }}>
+              <p style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Klaar om te starten?</p>
               <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px" }}>
                 Plan een gratis intake
               </h3>

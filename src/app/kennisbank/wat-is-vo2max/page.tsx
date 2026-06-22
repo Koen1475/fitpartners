@@ -40,11 +40,11 @@ export default function WatIsVO2max() {
       {/* Hero */}
       <section style={{ background: "#131211", padding: "100px 24px 64px", borderBottom: "1px solid #2a2720" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
-          <Link href="/kennisbank" style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
+          <Link href="/kennisbank" style={{ color: "#BC9C22", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
             ← Kennisbank
           </Link>
           <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 24 }}>
-            <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Sportonderzoek</span>
+            <span style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>Sportonderzoek</span>
             <span style={{ color: "#8c8780", fontSize: 12 }}>5 min leestijd</span>
           </div>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 72px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1.05 }}>
@@ -73,7 +73,7 @@ export default function WatIsVO2max() {
           </Reveal>
 
           <Reveal>
-            <div style={{ background: "#131211", border: "1px solid #2a2720", borderLeft: "4px solid #ffd53b", padding: "28px 32px", margin: "0 0 64px" }}>
+            <div style={{ background: "#131211", border: "1px solid #2a2720", borderLeft: "4px solid #BC9C22", padding: "28px 32px", margin: "0 0 64px" }}>
               <p style={{ color: "#cfc9bd", fontSize: 17, lineHeight: 1.8, margin: 0, fontStyle: "italic" }}>
                 "Een VO2max van 50 ml/kg/min bij een man van 40 jaar wordt beschouwd als uitstekend. Topsporters halen waarden van 80 of hoger."
               </p>
@@ -97,7 +97,7 @@ export default function WatIsVO2max() {
                 "Langere levensverwachting",
               ].map((item, i) => (
                 <li key={i} style={{ display: "flex", gap: 16, padding: "11px 0", borderBottom: "1px solid #2a2720", color: "#cfc9bd", fontSize: 15, lineHeight: 1.5 }}>
-                  <span style={{ color: "#ffd53b", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                  <span style={{ color: "#BC9C22", fontWeight: 700, flexShrink: 0 }}>✓</span>
                   {item}
                 </li>
               ))}
@@ -130,7 +130,7 @@ export default function WatIsVO2max() {
                 { title: "Krachttraining", desc: "Spierkracht ondersteunt cardiovasculaire efficiëntie en vermindert de energiekosten per beweging." },
               ].map((item, i) => (
                 <div key={i} style={{ background: "#131211", border: "1px solid #2a2720", padding: "24px 28px", display: "flex", gap: 20 }}>
-                  <span style={{ color: "#ffd53b", fontFamily: "var(--font-anton)", fontSize: 20, flexShrink: 0, lineHeight: 1 }}>0{i + 1}</span>
+                  <span style={{ color: "#BC9C22", fontFamily: "var(--font-anton)", fontSize: 20, flexShrink: 0, lineHeight: 1 }}>0{i + 1}</span>
                   <div>
                     <p style={{ color: "#f4efe6", fontSize: 15, fontWeight: 600, margin: "0 0 6px" }}>{item.title}</p>
                     <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
@@ -141,15 +141,15 @@ export default function WatIsVO2max() {
           </Reveal>
 
           <Reveal>
-            <div style={{ background: "#131211", border: "1px solid #ffd53b", padding: "36px 40px", textAlign: "center" }}>
-              <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Wil jij jouw VO2max meten?</p>
+            <div style={{ background: "#131211", border: "1px solid #BC9C22", padding: "36px 40px", textAlign: "center" }}>
+              <p style={{ color: "#BC9C22", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 12px" }}>Wil jij jouw VO2max meten?</p>
               <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px" }}>
                 Plan een sportonderzoek
               </h3>
               <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.7, margin: "0 0 28px" }}>
                 Tijdens ons wetenschappelijk sportonderzoek brengen we jouw VO2max, anaerobe drempel en trainingszones nauwkeurig in kaart.
               </p>
-              <Link href="/wat-bieden-wij/sportonderzoeken" style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              <Link href="/wat-bieden-wij/sportonderzoeken" style={{ display: "inline-block", background: "#BC9C22", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
                 Meer over sportonderzoek
               </Link>
             </div>
