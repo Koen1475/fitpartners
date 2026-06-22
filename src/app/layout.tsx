@@ -20,7 +20,7 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const BASE = "https://fit-partners.nl";
+const BASE = "https://fitpartners.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
