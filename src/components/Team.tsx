@@ -30,7 +30,8 @@ export default function Team() {
         </div>
       </div>
 
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: "max(24px, calc((100vw - 1200px)/2 + 24px))", scrollbarWidth: "none" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
+      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
         {team.map((t) => (
           <div key={t.name} onMouseEnter={() => setHovered(t.name)} onMouseLeave={() => setHovered(null)}
             style={{ flexShrink: 0, width: 340, position: "relative", cursor: "default" }}>
@@ -71,6 +72,7 @@ export default function Team() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

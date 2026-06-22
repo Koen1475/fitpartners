@@ -29,7 +29,8 @@ export default function Diensten() {
         </div>
       </div>
 
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: "max(24px, calc((100vw - 1200px)/2 + 24px))", scrollbarWidth: "none" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
+      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", scrollbarWidth: "none" }}>
         {diensten.map((d) => (
           <div key={d.title} style={{ flexShrink: 0, width: 320, background: "#131211" }}>
             <div style={{ position: "relative", height: 200, overflow: "hidden" }}>
@@ -41,6 +42,7 @@ export default function Diensten() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
