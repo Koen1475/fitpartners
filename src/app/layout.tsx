@@ -127,8 +127,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={`${anton.variable} ${montserrat.variable}`}>
       <head>
-        <link rel="preload" as="image" href="/images/FIT-Partners-Logo-Witte-Letters-450X150.png" />
-        <link rel="preload" as="image" href="/images/Hero.jpg" />
+        <link
+          rel="preload"
+          as="image"
+          href="/_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=256&q=60"
+          imageSrcSet="/_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=256&q=60 1x, /_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=384&q=60 2x"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
