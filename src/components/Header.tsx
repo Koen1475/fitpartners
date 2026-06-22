@@ -85,7 +85,43 @@ export default function Header() {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   return (
-    <header style={{ background: "#0c0b0a", borderBottom: "1px solid #2a2720", position: "sticky", top: 0, zIndex: 50 }}>
+    <header style={{ position: "sticky", top: 0, zIndex: 50 }}>
+      {/* Topbar */}
+      <div style={{ background: "#080807", borderBottom: "1px solid #1e1d1b" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", height: 36, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
+            <a href="tel:06-14634488" style={{ color: "#6f6a60", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, transition: "color 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.28 5.28l.95-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.87z"/></svg>
+              06-14634488
+            </a>
+            <span style={{ color: "#2a2720" }}>|</span>
+            <a href="mailto:info@fit-partners.nl" style={{ color: "#6f6a60", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, transition: "color 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              INFO@FIT-PARTNERS.NL
+            </a>
+          </div>
+          <div style={{ display: "flex", gap: 20, alignItems: "center" }} className="topbar-right">
+            <a href="https://fitpartners.sportbitapp.nl/web/nl/" target="_blank" rel="noopener noreferrer"
+              style={{ color: "#b79d3e", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
+              Leden login
+            </a>
+            <span style={{ color: "#2a2720" }}>|</span>
+            <Link href="/contact"
+              style={{ color: "#6f6a60", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 600, transition: "color 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+              Contact
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div style={{ background: "#0c0b0a", borderBottom: "1px solid #2a2720" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         <Link href="/" style={{ flexShrink: 0 }}>
           <Image src="/images/FIT-Partners-Logo-Witte-Letters-450X150.png" alt="FIT Partners" width={160} height={54} style={{ objectFit: "contain" }} priority />
@@ -147,8 +183,10 @@ export default function Header() {
         @media (max-width: 900px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
+          .topbar-right { display: none !important; }
         }
       `}</style>
+      </div>
     </header>
   );
 }
