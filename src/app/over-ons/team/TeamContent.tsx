@@ -17,7 +17,7 @@ function TeamCard({ t, featured = false }: { t: typeof team[0]; featured?: boole
       <Image src={t.img} alt={t.name} fill style={{ objectFit: "cover", objectPosition: "top", transition: "transform 0.5s ease", transform: hovered ? "scale(1.05)" : "scale(1)" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,0.85) 0%, rgba(12,11,10,0.1) 50%, transparent 100%)", transition: "opacity 0.4s ease", opacity: hovered ? 0 : 1 }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,0.97) 0%, rgba(12,11,10,0.75) 50%, rgba(12,11,10,0.1) 100%)", transition: "opacity 0.4s ease", opacity: hovered ? 1 : 0 }} />
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 24px 20px", transition: "transform 0.4s ease", transform: hovered ? "translateY(-120px)" : "translateY(0)" }}>
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 24px 20px", transition: "opacity 0.3s ease", opacity: hovered ? 0 : 1 }}>
         <h3 style={{ fontFamily: "var(--font-anton)", fontSize: featured ? 28 : 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 4px", lineHeight: 1 }}>{t.name}</h3>
         <p style={{ color: "#BC9C22", fontSize: 12, margin: 0, letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>{t.role}</p>
       </div>
