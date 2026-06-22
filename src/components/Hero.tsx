@@ -1,8 +1,17 @@
-"use client";
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section style={{ position: "relative", minHeight: "calc(100vh - 108px)", display: "flex", alignItems: "center", overflow: "hidden" }}>
-      <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.35)" }} />
+      <Image
+        src="/images/Hero.jpg"
+        alt=""
+        fill
+        priority
+        quality={80}
+        sizes="100vw"
+        style={{ objectFit: "cover", objectPosition: "center", filter: "brightness(0.35)" }}
+      />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(12,11,10,0.4) 0%, rgba(12,11,10,0.8) 100%)" }} />
 
       <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px", width: "100%" }}>
@@ -23,16 +32,8 @@ export default function Hero() {
         </p>
 
         <div className="hero-line-4" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <a href="#contact" style={{ background: "#ffd53b", color: "#0c0b0a", padding: "16px 36px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", transition: "background 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "#e6c035")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "#ffd53b")}>
-            Gratis intake aanvragen
-          </a>
-          <a href="#aanpak" style={{ border: "1px solid #b8b3aa", color: "#f4efe6", padding: "16px 36px", fontWeight: 600, fontSize: 14, letterSpacing: "0.05em", textTransform: "uppercase", textDecoration: "none", transition: "border-color 0.2s, color 0.2s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#ffd53b"; e.currentTarget.style.color = "#ffd53b"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#b8b3aa"; e.currentTarget.style.color = "#f4efe6"; }}>
-            Onze aanpak
-          </a>
+          <a href="#contact" className="hero-btn-gold">Gratis intake aanvragen</a>
+          <a href="#aanpak" className="hero-btn-outline">Onze aanpak</a>
         </div>
       </div>
     </section>

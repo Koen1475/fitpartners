@@ -37,6 +37,12 @@ a { color: inherit; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
+/* Hero button hover */
+.hero-btn-gold { display: inline-block; background: #ffd53b; color: #0c0b0a; padding: 16px 36px; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+.hero-btn-gold:hover { background: #e6c035; }
+.hero-btn-outline { display: inline-block; border: 1px solid #b8b3aa; color: #f4efe6; padding: 16px 36px; font-weight: 600; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+.hero-btn-outline:hover { border-color: #ffd53b; color: #ffd53b; }
+
 /* Hero text animation */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(32px); }
