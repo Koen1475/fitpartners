@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Anton, Montserrat } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import IntakeModal from "@/components/IntakeModal";
+import IntakeModalLoader from "@/components/IntakeModalLoader";
 
 const anton = Anton({
   weight: "400",
@@ -127,23 +129,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={`${anton.variable} ${montserrat.variable}`}>
       <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=256&q=60"
-          imageSrcSet="/_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=256&q=60 1x, /_next/image?url=%2Fimages%2FFIT-Partners-Logo-Witte-Letters-450X150.png&w=384&q=60 2x"
-          fetchPriority="high"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
       <body style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
-        <Header />
+        <Header logo={
+          <Link href="/" style={{ flexShrink: 0 }}>
+            <Image
+              src="/images/FIT-Partners-Logo-Witte-Letters-450X150.png"
+              alt="FIT Partners"
+              width={160}
+              height={54}
+              style={{ objectFit: "contain" }}
+              priority
+              quality={60}
+              sizes="160px"
+            />
+          </Link>
+        } />
         {children}
         <Footer />
-        <IntakeModal />
+        <IntakeModalLoader />
       </body>
     </html>
   );

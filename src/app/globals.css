@@ -1,22 +1,25 @@
-@import "tailwindcss";
-
-:root {
-  --gold: #4cb73e;
-  --bg: #0c0b0a;
-  --bg2: #131211;
-  --text: #f4efe6;
-  --muted: #b8b3aa;
-}
-
-* { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: border-box; }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: #0c0b0a;
+  color: #f4efe6;
   margin: 0;
+  line-height: 1.5;
 }
 
 html { scroll-behavior: smooth; }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+textarea { cursor: text; }
+
+a { color: inherit; }
 
 /* Reveal animations */
 .reveal {

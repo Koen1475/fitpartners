@@ -1,6 +1,5 @@
 "use client";
 import { useState, useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 type NavChild = { label: string; href: string };
@@ -80,7 +79,7 @@ function DropdownItem({ item }: { item: NavItem }) {
   );
 }
 
-export default function Header() {
+export default function Header({ logo }: { logo: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
@@ -123,9 +122,7 @@ export default function Header() {
       </div>
       <div style={{ background: "#0c0b0a", borderBottom: "1px solid #2a2720" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
-        <Link href="/" style={{ flexShrink: 0 }}>
-          <Image src="/images/FIT-Partners-Logo-Witte-Letters-450X150.png" alt="FIT Partners" width={160} height={54} style={{ objectFit: "contain" }} priority quality={60} sizes="160px" />
-        </Link>
+        {logo}
 
         {/* Desktop nav */}
         <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="desktop-nav">
