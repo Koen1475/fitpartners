@@ -13,7 +13,7 @@ export default function NotFound() {
         <p style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(96px, 18vw, 180px)", color: "#131211", lineHeight: 1, margin: "0 0 32px", userSelect: "none" }}>
           404
         </p>
-        <div style={{ width: 48, height: 2, background: "#b79d3e", margin: "0 auto 32px" }} />
+        <div style={{ width: 48, height: 2, background: "#ffd53b", margin: "0 auto 32px" }} />
         <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>
           Pagina niet gevonden
         </h1>
@@ -21,7 +21,7 @@ export default function NotFound() {
           De pagina die je zoekt bestaat niet of is verplaatst. Ga terug naar de homepage of neem contact met ons op.
         </p>
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/" style={{ background: "#b79d3e", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+          <Link href="/" style={{ background: "#ffd53b", color: "#0c0b0a", padding: "14px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
             Terug naar home
           </Link>
           <a href="tel:06-14634488" style={{ background: "transparent", color: "#b8b3aa", padding: "14px 32px", fontWeight: 600, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", border: "1px solid #2a2720" }}>

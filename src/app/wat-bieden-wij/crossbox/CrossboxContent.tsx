@@ -63,7 +63,7 @@ export default function CrossboxContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 20%", filter: "brightness(0.22)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>CrossBox</h1>
           <p style={{ color: "#cfc9bd", fontSize: 17, lineHeight: 1.7, maxWidth: 600, margin: 0 }}>
             CrossBox is een uitstekende manier om tegelijkertijd aan je kracht en conditie te werken en vet te verbranden. Een effectieve 2-in-1-work-out, waarmee je ook nog &apos;s tijd bespaart.
@@ -81,15 +81,15 @@ export default function CrossboxContent() {
           <div style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: 0 }} className="crossbox-grid">
             <div style={{ borderRight: "1px solid #2a2720", position: "relative" }}>
               <div className="scroll-hint" style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 56, zIndex: 2, pointerEvents: "none", background: "linear-gradient(to right, transparent, #0c0b0a)", opacity: scrollHint ? 1 : 0, transition: "opacity 0.4s ease" }}>
-                <div style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", color: "#b79d3e", fontSize: 18 }} className="hint-arrow">›</div>
+                <div style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", color: "#ffd53b", fontSize: 18 }} className="hint-arrow">›</div>
               </div>
               <div ref={tabsRef} className="tabs-inner" onScroll={() => setScrollHint(false)}>
                 {tabs.map((tab, i) => (
                   <button key={tab.label} onClick={() => switchTab(i)}
-                    style={{ width: "100%", border: "none", cursor: "pointer", padding: "20px 28px", textAlign: "left", display: "flex", alignItems: "center", gap: 18, borderLeft: `3px solid ${active === i ? "#b79d3e" : "transparent"}`, borderBottom: "1px solid #1e1d1b", transition: "border-color 0.25s, background 0.2s", background: active === i ? "rgba(183,157,62,0.06)" : "transparent" }}
+                    style={{ width: "100%", border: "none", cursor: "pointer", padding: "20px 28px", textAlign: "left", display: "flex", alignItems: "center", gap: 18, borderLeft: `3px solid ${active === i ? "#ffd53b" : "transparent"}`, borderBottom: "1px solid #1e1d1b", transition: "border-color 0.25s, background 0.2s", background: active === i ? "rgba(183,157,62,0.06)" : "transparent" }}
                     onMouseEnter={(e) => { if (active !== i) e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
                     onMouseLeave={(e) => { if (active !== i) e.currentTarget.style.background = "transparent"; }}>
-                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: active === i ? "#b79d3e" : "#2e2c29", letterSpacing: "0.05em", transition: "color 0.25s", lineHeight: 1, flexShrink: 0 }}>{tab.num}</span>
+                    <span style={{ fontFamily: "var(--font-anton)", fontSize: 13, color: active === i ? "#ffd53b" : "#2e2c29", letterSpacing: "0.05em", transition: "color 0.25s", lineHeight: 1, flexShrink: 0 }}>{tab.num}</span>
                     <span style={{ fontFamily: "var(--font-anton)", fontSize: 16, textTransform: "uppercase", letterSpacing: "0.06em", lineHeight: 1.2, color: active === i ? "#f4efe6" : "#6f6a60", transition: "color 0.25s" }}>{tab.label}</span>
                   </button>
                 ))}
@@ -112,10 +112,10 @@ export default function CrossboxContent() {
           <Reveal>
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 48px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 20px", lineHeight: 1 }}>Direct een afspraak maken?</h2>
             <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
-              Bel ons op{" "}<a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>{" "}of stuur een bericht via onderstaande knop.
+              Bel ons op{" "}<a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>{" "}of stuur een bericht via onderstaande knop.
             </p>
             <a href="mailto:info@fit-partners.nl?subject=Aanvraag intake CrossBox"
-              style={{ display: "inline-block", background: "#b79d3e", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
+              style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
               onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
               onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
               Aanvraag intake

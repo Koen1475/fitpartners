@@ -13,7 +13,7 @@ export default function Team() {
     <section id="team" style={{ background: "#131211", padding: "96px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
         <Reveal>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>De mensen</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>De mensen</p>
         </Reveal>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
           <Reveal>
@@ -49,10 +49,10 @@ export default function Team() {
                 transform: hovered === t.name ? "translateY(0)" : "translateY(10px)",
                 transition: "opacity 0.35s ease, transform 0.35s ease",
               }}>
-                <p style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>Specialisaties</p>
+                <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>Specialisaties</p>
                 {t.specs.map((s) => (
                   <div key={s} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 7 }}>
-                    <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#b79d3e", flexShrink: 0, display: "inline-block" }} />
+                    <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#ffd53b", flexShrink: 0, display: "inline-block" }} />
                     <span style={{ color: "#f4efe6", fontSize: 13, lineHeight: 1.4 }}>{s}</span>
                   </div>
                 ))}

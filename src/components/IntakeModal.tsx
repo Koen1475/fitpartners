@@ -84,7 +84,7 @@ export default function IntakeModal() {
           display: "flex", alignItems: "center", justifyContent: "center",
           transition: "color 0.2s, border-color 0.2s",
         }}
-          onMouseEnter={e => { e.currentTarget.style.color = "#f4efe6"; e.currentTarget.style.borderColor = "#b79d3e"; }}
+          onMouseEnter={e => { e.currentTarget.style.color = "#f4efe6"; e.currentTarget.style.borderColor = "#ffd53b"; }}
           onMouseLeave={e => { e.currentTarget.style.color = "#b8b3aa"; e.currentTarget.style.borderColor = "#2a2720"; }}
         >
           <X size={16} />
@@ -97,7 +97,7 @@ export default function IntakeModal() {
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, transparent 60%, #0c0b0a)" }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,0.7) 0%, transparent 50%)" }} />
           <div style={{ position: "absolute", bottom: 36, left: 28, right: 28 }}>
-            <p style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 700 }}>Gratis en vrijblijvend</p>
+            <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 8px", fontWeight: 700 }}>Gratis en vrijblijvend</p>
             <p style={{ color: "#f4efe6", fontSize: 20, fontFamily: "var(--font-anton)", textTransform: "uppercase", margin: "0 0 6px", lineHeight: 1.1 }}>
               Kom kennismaken
             </p>
@@ -111,25 +111,25 @@ export default function IntakeModal() {
         <div style={{ flex: 1, padding: "48px 40px 40px", overflowY: "auto", display: "flex", flexDirection: "column" }}>
           {sent ? (
             <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", gap: 20 }}>
-              <CheckCircle size={48} color="#b79d3e" strokeWidth={1.5} />
+              <CheckCircle size={48} color="#ffd53b" strokeWidth={1.5} />
               <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: 0 }}>
                 Aanvraag verstuurd!
               </h2>
               <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.7, margin: 0, maxWidth: 300 }}>
                 Je e-mailclient opent zich om de aanvraag te versturen. We nemen snel contact op.
               </p>
-              <button onClick={close} style={{ marginTop: 8, background: "#b79d3e", color: "#0c0b0a", border: "none", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" }}>
+              <button onClick={close} style={{ marginTop: 8, background: "#ffd53b", color: "#0c0b0a", border: "none", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" }}>
                 Sluiten
               </button>
             </div>
           ) : (
             <>
               <div style={{ marginBottom: 36 }}>
-                <p style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>FIT Partners</p>
+                <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>FIT Partners</p>
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(28px, 4vw, 40px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>
                   Aanvraag intake
                 </h2>
-                <div style={{ width: 36, height: 2, background: "#b79d3e", marginTop: 14 }} />
+                <div style={{ width: 36, height: 2, background: "#ffd53b", marginTop: 14 }} />
               </div>
 
               <form onSubmit={submit} style={{ display: "flex", flexDirection: "column", gap: 12, flex: 1 }}>
@@ -141,7 +141,7 @@ export default function IntakeModal() {
                   onChange={e => setForm(f => ({ ...f, naam: e.target.value }))}
                   onFocus={() => setFocused("naam")}
                   onBlur={() => setFocused(null)}
-                  style={{ ...inputStyle, borderColor: focused === "naam" ? "#b79d3e" : "#2a2720" }}
+                  style={{ ...inputStyle, borderColor: focused === "naam" ? "#ffd53b" : "#2a2720" }}
                 />
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                   <input
@@ -152,7 +152,7 @@ export default function IntakeModal() {
                     onChange={e => setForm(f => ({ ...f, telefoon: e.target.value }))}
                     onFocus={() => setFocused("tel")}
                     onBlur={() => setFocused(null)}
-                    style={{ ...inputStyle, borderColor: focused === "tel" ? "#b79d3e" : "#2a2720" }}
+                    style={{ ...inputStyle, borderColor: focused === "tel" ? "#ffd53b" : "#2a2720" }}
                   />
                   <input
                     required
@@ -162,7 +162,7 @@ export default function IntakeModal() {
                     onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                     onFocus={() => setFocused("email")}
                     onBlur={() => setFocused(null)}
-                    style={{ ...inputStyle, borderColor: focused === "email" ? "#b79d3e" : "#2a2720" }}
+                    style={{ ...inputStyle, borderColor: focused === "email" ? "#ffd53b" : "#2a2720" }}
                   />
                 </div>
                 <textarea
@@ -172,15 +172,15 @@ export default function IntakeModal() {
                   onChange={e => setForm(f => ({ ...f, bericht: e.target.value }))}
                   onFocus={() => setFocused("msg")}
                   onBlur={() => setFocused(null)}
-                  style={{ ...inputStyle, resize: "vertical", lineHeight: 1.6, borderColor: focused === "msg" ? "#b79d3e" : "#2a2720" }}
+                  style={{ ...inputStyle, resize: "vertical", lineHeight: 1.6, borderColor: focused === "msg" ? "#ffd53b" : "#2a2720" }}
                 />
 
                 <div style={{ marginTop: 8, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
                   <p style={{ color: "#6f6a60", fontSize: 12, margin: 0, lineHeight: 1.5 }}>
-                    Of bel direct: <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none" }}>06-14634488</a>
+                    Of bel direct: <a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none" }}>06-14634488</a>
                   </p>
                   <button type="submit" style={{
-                    background: "#b79d3e", color: "#0c0b0a", border: "none",
+                    background: "#ffd53b", color: "#0c0b0a", border: "none",
                     padding: "14px 28px", fontWeight: 700, fontSize: 13,
                     letterSpacing: "0.08em", textTransform: "uppercase",
                     cursor: "pointer", display: "flex", alignItems: "center", gap: 10,

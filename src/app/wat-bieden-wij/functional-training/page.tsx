@@ -55,7 +55,7 @@ export default function FunctionalTraining() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 30%", filter: "brightness(0.3)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 60%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 56px", width: "100%" }}>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>
             Functional Training
           </h1>
@@ -66,7 +66,7 @@ export default function FunctionalTraining() {
       <section style={{ background: "#0c0b0a", padding: "72px 24px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <Reveal>
-            <p style={{ fontSize: 22, color: "#cfc9bd", lineHeight: 1.7, fontWeight: 300, margin: "0 0 40px", borderLeft: "3px solid #b79d3e", paddingLeft: 28 }}>
+            <p style={{ fontSize: 22, color: "#cfc9bd", lineHeight: 1.7, fontWeight: 300, margin: "0 0 40px", borderLeft: "3px solid #ffd53b", paddingLeft: 28 }}>
               Werken met een aanpak op maat. Duidelijke doelen, meetbare resultaten en persoonlijke aandacht zijn in onze ogen essentieel.
             </p>
           </Reveal>
@@ -115,7 +115,7 @@ export default function FunctionalTraining() {
                       display: "flex", alignItems: "center", justifyContent: "center",
                       flexShrink: 0,
                     }}>
-                      <Icon size={20} color="#b79d3e" strokeWidth={1.5} />
+                      <Icon size={20} color="#ffd53b" strokeWidth={1.5} />
                     </div>
                     <h3 style={{
                       fontFamily: "var(--font-anton)", fontSize: 17,
@@ -144,11 +144,11 @@ export default function FunctionalTraining() {
             </h2>
             <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
-              <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
+              <a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.
             </p>
             <a href="mailto:info@fit-partners.nl?subject=Aanvraag intake Functional Training"
-              style={{ display: "inline-block", background: "#b79d3e", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
               Aanvraag intake
             </a>
           </Reveal>
@@ -157,7 +157,7 @@ export default function FunctionalTraining() {
 
       <style>{`
         .feature-card { transition: border-color 0.25s; }
-        .feature-card:hover { border-color: #b79d3e !important; }
+        .feature-card:hover { border-color: #ffd53b !important; }
       `}</style>
     </main>
   );

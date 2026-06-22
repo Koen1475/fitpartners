@@ -12,7 +12,7 @@ export default function Diensten() {
     <section id="diensten" style={{ background: "#0c0b0a", padding: "96px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
         <Reveal>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Wat we bieden</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Wat we bieden</p>
         </Reveal>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48 }}>
           <Reveal>

@@ -12,7 +12,7 @@ export default function Aanpak() {
     <section id="aanpak" style={{ background: "#131211", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Reveal>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Werkwijze</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16 }}>Werkwijze</p>
           <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(36px, 5vw, 64px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 64px", lineHeight: 1 }}>
             Meten = weten
           </h2>
@@ -22,7 +22,7 @@ export default function Aanpak() {
           {steps.map((s, i) => (
             <Reveal key={s.num} delay={(i + 1) as 1 | 2 | 3 | 4}>
               <div style={{ borderTop: "1px solid #2a2720", paddingTop: 28 }}>
-                <div style={{ fontFamily: "var(--font-anton)", fontSize: 56, color: "#b79d3e", opacity: 0.2, lineHeight: 1, marginBottom: 16 }}>{s.num}</div>
+                <div style={{ fontFamily: "var(--font-anton)", fontSize: 56, color: "#ffd53b", opacity: 0.2, lineHeight: 1, marginBottom: 16 }}>{s.num}</div>
                 <h3 style={{ fontFamily: "var(--font-anton)", fontSize: 24, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 12px" }}>{s.title}</h3>
                 <p style={{ color: "#b8b3aa", lineHeight: 1.7, fontSize: 15, margin: 0 }}>{s.desc}</p>
               </div>

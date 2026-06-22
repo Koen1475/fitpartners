@@ -51,7 +51,7 @@ function DropdownItem({ item }: { item: NavItem }) {
     return (
       <Link href={item.href!}
         style={{ color: "#b8b3aa", textDecoration: "none", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, whiteSpace: "nowrap" }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = "#b79d3e")}
+        onMouseEnter={(e) => (e.currentTarget.style.color = "#ffd53b")}
         onMouseLeave={(e) => (e.currentTarget.style.color = "#b8b3aa")}>
         {item.label}
       </Link>
@@ -60,12 +60,12 @@ function DropdownItem({ item }: { item: NavItem }) {
 
   return (
     <div style={{ position: "relative" }} onMouseEnter={show} onMouseLeave={hide}>
-      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#b79d3e" : "#b8b3aa", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
+      <button style={{ background: "none", border: "none", cursor: "pointer", color: open ? "#ffd53b" : "#b8b3aa", fontSize: 13, letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 500, display: "flex", alignItems: "center", gap: 5, padding: 0, whiteSpace: "nowrap" }}>
         {item.label}
         <span style={{ fontSize: 9, transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s", display: "inline-block" }}>▼</span>
       </button>
       {open && (
-        <div style={{ position: "absolute", top: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", background: "#131211", border: "1px solid #2a2720", borderTop: "2px solid #b79d3e", minWidth: 200, zIndex: 100, padding: "8px 0" }}>
+        <div style={{ position: "absolute", top: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", background: "#131211", border: "1px solid #2a2720", borderTop: "2px solid #ffd53b", minWidth: 200, zIndex: 100, padding: "8px 0" }}>
           {item.children.map((c) => (
             <Link key={c.href} href={c.href}
               style={{ display: "block", color: "#b8b3aa", textDecoration: "none", fontSize: 13, padding: "10px 20px", whiteSpace: "nowrap", transition: "color 0.15s, background 0.15s" }}
@@ -87,35 +87,35 @@ export default function Header() {
   return (
     <header style={{ position: "sticky", top: 0, zIndex: 50 }}>
       {/* Topbar */}
-      <div style={{ background: "#080807", borderBottom: "1px solid #1e1d1b" }}>
+      <div style={{ background: "#ffd53b" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", height: 36, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
-            <a href="tel:06-14634488" style={{ color: "#6f6a60", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, transition: "color 0.2s" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+            <a href="tel:06-14634488" style={{ color: "#0c0b0a", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, opacity: 0.75, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.75")}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.28 5.28l.95-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.87z"/></svg>
               06-14634488
             </a>
-            <span style={{ color: "#2a2720" }}>|</span>
-            <a href="mailto:info@fit-partners.nl" style={{ color: "#6f6a60", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, transition: "color 0.2s" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+            <span style={{ color: "rgba(0,0,0,0.2)" }}>|</span>
+            <a href="mailto:info@fit-partners.nl" style={{ color: "#0c0b0a", textDecoration: "none", fontSize: 12, letterSpacing: "0.03em", display: "flex", alignItems: "center", gap: 6, opacity: 0.75, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.75")}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
               INFO@FIT-PARTNERS.NL
             </a>
           </div>
           <div style={{ display: "flex", gap: 20, alignItems: "center" }} className="topbar-right">
             <a href="https://fitpartners.sportbitapp.nl/web/nl/" target="_blank" rel="noopener noreferrer"
-              style={{ color: "#b79d3e", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700, transition: "opacity 0.2s" }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
+              style={{ color: "#0c0b0a", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 800, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.65")}
               onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
               Leden login
             </a>
-            <span style={{ color: "#2a2720" }}>|</span>
+            <span style={{ color: "rgba(0,0,0,0.2)" }}>|</span>
             <Link href="/contact"
-              style={{ color: "#6f6a60", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 600, transition: "color 0.2s" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#b8b3aa")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#6f6a60")}>
+              style={{ color: "#0c0b0a", textDecoration: "none", fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 600, opacity: 0.75, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.75")}>
               Contact
             </Link>
           </div>
@@ -131,7 +131,7 @@ export default function Header() {
         <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="desktop-nav">
           {nav.map((item) => <DropdownItem key={item.label} item={item} />)}
           <button onClick={() => window.dispatchEvent(new Event("openIntakeModal"))}
-            style={{ background: "#b79d3e", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
+            style={{ background: "#ffd53b", color: "#0c0b0a", padding: "9px 22px", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap", transition: "opacity 0.2s" }}
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}>
             Gratis intake
@@ -172,7 +172,7 @@ export default function Header() {
           ))}
           <div style={{ padding: "16px 24px 0" }}>
             <button onClick={() => { setMobileOpen(false); window.dispatchEvent(new Event("openIntakeModal")); }}
-              style={{ display: "block", width: "100%", background: "#b79d3e", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", textAlign: "center" }}>
+              style={{ display: "block", width: "100%", background: "#ffd53b", color: "#0c0b0a", padding: "12px 24px", fontWeight: 700, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", border: "none", cursor: "pointer", textAlign: "center" }}>
               Gratis intake
             </button>
           </div>

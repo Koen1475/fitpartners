@@ -19,13 +19,13 @@ function TeamCard({ t, featured = false }: { t: typeof team[0]; featured?: boole
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,0.97) 0%, rgba(12,11,10,0.75) 50%, rgba(12,11,10,0.1) 100%)", transition: "opacity 0.4s ease", opacity: hovered ? 1 : 0 }} />
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 24px 20px", transition: "transform 0.4s ease", transform: hovered ? "translateY(-120px)" : "translateY(0)" }}>
         <h3 style={{ fontFamily: "var(--font-anton)", fontSize: featured ? 28 : 22, textTransform: "uppercase", color: "#f4efe6", margin: "0 0 4px", lineHeight: 1 }}>{t.name}</h3>
-        <p style={{ color: "#b79d3e", fontSize: 12, margin: 0, letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>{t.role}</p>
+        <p style={{ color: "#ffd53b", fontSize: 12, margin: 0, letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>{t.role}</p>
       </div>
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 24px 24px", opacity: hovered ? 1 : 0, transform: hovered ? "translateY(0)" : "translateY(16px)", transition: "opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s" }}>
-        <p style={{ color: "#b79d3e", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>Specialisaties</p>
+        <p style={{ color: "#ffd53b", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", margin: "0 0 10px", fontWeight: 700 }}>Specialisaties</p>
         {t.specs.map((s) => (
           <div key={s} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 7 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#b79d3e", flexShrink: 0 }} />
+            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#ffd53b", flexShrink: 0 }} />
             <span style={{ color: "#f4efe6", fontSize: 13, lineHeight: 1.4 }}>{s}</span>
           </div>
         ))}
@@ -44,11 +44,11 @@ export default function TeamContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 25%", filter: "brightness(0.18)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Over ons</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Over ons</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>Ons team</h1>
           <p style={{ color: "#cfc9bd", fontSize: 17, lineHeight: 1.7, maxWidth: 600, margin: 0 }}>
             Wij zijn zo goed in ons vak omdat er een essentiële factor meespeelt in alles wat we doen:{" "}
-            <span style={{ color: "#b79d3e", fontWeight: 700 }}>passie</span>. Omdat we ons werk met zoveel passie en enthousiasme doen, gaan we net even verder waar anderen stoppen.
+            <span style={{ color: "#ffd53b", fontWeight: 700 }}>passie</span>. Omdat we ons werk met zoveel passie en enthousiasme doen, gaan we net even verder waar anderen stoppen.
           </p>
         </div>
       </section>

@@ -5,7 +5,7 @@ export default function IntakeTriggerButton({ label = "Gratis intake aanvragen" 
     <button
       onClick={() => window.dispatchEvent(new Event("openIntakeModal"))}
       style={{
-        background: "#b79d3e", color: "#0c0b0a", border: "none",
+        background: "#ffd53b", color: "#0c0b0a", border: "none",
         padding: "14px 32px", fontWeight: 700, fontSize: 13,
         letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer",
       }}

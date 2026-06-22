@@ -40,7 +40,7 @@ export default function Partners() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/Hero.jpg)", backgroundSize: "cover", backgroundPosition: "center 30%", filter: "brightness(0.18)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>FIT Partners</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>FIT Partners</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1 }}>
             Onze partners
           </h1>
@@ -92,14 +92,14 @@ export default function Partners() {
 
                 {/* Content */}
                 <div>
-                  <p style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 10px" }}>{p.tag}</p>
+                  <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 10px" }}>{p.tag}</p>
                   <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(24px, 3vw, 36px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1.1 }}>
                     {p.name}
                   </h2>
                   <p style={{ color: "#b8b3aa", fontSize: 15, lineHeight: 1.85, margin: 0 }}>{p.desc}</p>
                 </div>
 
-                <div style={{ width: 36, height: 2, background: "#b79d3e", marginTop: "auto" }} />
+                <div style={{ width: 36, height: 2, background: "#ffd53b", marginTop: "auto" }} />
               </div>
             </Reveal>
           ))}

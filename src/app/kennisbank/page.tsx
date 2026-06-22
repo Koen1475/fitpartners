@@ -43,7 +43,7 @@ export default function Kennisbank() {
       <section style={{ background: "#131211", padding: "100px 24px 72px", borderBottom: "1px solid #2a2720" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <Reveal>
-            <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 16px" }}>FIT Partners</p>
+            <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 16px" }}>FIT Partners</p>
             <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(48px, 7vw, 96px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 24px", lineHeight: 1 }}>
               Kennisbank
             </h1>
@@ -72,7 +72,7 @@ export default function Kennisbank() {
                     transition: "border-color 0.25s",
                   }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                      <span style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>{a.label}</span>
+                      <span style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700 }}>{a.label}</span>
                       <span style={{ color: "#6f6a60", fontSize: 12 }}>{a.readTime} leestijd</span>
                     </div>
                     <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 22, textTransform: "uppercase", color: "#f4efe6", margin: 0, lineHeight: 1.15 }}>
@@ -81,7 +81,7 @@ export default function Kennisbank() {
                     <p style={{ color: "#b8b3aa", fontSize: 14, lineHeight: 1.8, margin: 0, flex: 1 }}>
                       {a.excerpt}
                     </p>
-                    <span style={{ color: "#b79d3e", fontSize: 13, fontWeight: 600, letterSpacing: "0.04em", marginTop: 8 }}>
+                    <span style={{ color: "#ffd53b", fontSize: 13, fontWeight: 600, letterSpacing: "0.04em", marginTop: 8 }}>
                       Lees artikel →
                     </span>
                   </article>
@@ -92,15 +92,15 @@ export default function Kennisbank() {
 
           {/* FAQ callout */}
           <Reveal>
-            <div style={{ marginTop: 48, background: "#131211", border: "1px solid #b79d3e", padding: "36px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 32, flexWrap: "wrap" }}>
+            <div style={{ marginTop: 48, background: "#131211", border: "1px solid #ffd53b", padding: "36px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 32, flexWrap: "wrap" }}>
               <div>
-                <p style={{ color: "#b79d3e", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 8px" }}>Veelgestelde vragen</p>
+                <p style={{ color: "#ffd53b", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 700, margin: "0 0 8px" }}>Veelgestelde vragen</p>
                 <h2 style={{ fontFamily: "var(--font-anton)", fontSize: 28, textTransform: "uppercase", color: "#f4efe6", margin: 0 }}>
                   Heb je een specifieke vraag?
                 </h2>
               </div>
               <Link href="/kennisbank/faq" style={{
-                background: "#b79d3e", color: "#0c0b0a", padding: "14px 28px",
+                background: "#ffd53b", color: "#0c0b0a", padding: "14px 28px",
                 fontWeight: 700, fontSize: 13, letterSpacing: "0.08em",
                 textTransform: "uppercase", textDecoration: "none", flexShrink: 0,
               }}>
@@ -111,7 +111,7 @@ export default function Kennisbank() {
         </div>
       </section>
 
-      <style>{`.kb-card:hover { border-color: #b79d3e !important; }`}</style>
+      <style>{`.kb-card:hover { border-color: #ffd53b !important; }`}</style>
     </main>
   );
 }

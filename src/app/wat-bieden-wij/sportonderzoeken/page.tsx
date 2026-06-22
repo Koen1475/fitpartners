@@ -50,7 +50,7 @@ function StaggeredGallery() {
       <div style={{ position: "relative", overflow: "hidden", marginTop: 32 }}>
         <Image src="/images/DataLab.jpg" alt="Sportonderzoek" fill
           style={{ objectFit: "cover", objectPosition: "center 60%", filter: "grayscale(100%) brightness(0.65)" }} />
-        <div style={{ position: "absolute", inset: 0, borderLeft: "3px solid #b79d3e", opacity: 0.4 }} />
+        <div style={{ position: "absolute", inset: 0, borderLeft: "3px solid #ffd53b", opacity: 0.4 }} />
       </div>
       {/* Middle bottom: offset down */}
       <div style={{ position: "relative", overflow: "hidden", marginTop: -24 }}>
@@ -72,7 +72,7 @@ function CheckList({ items }: { items: string[] }) {
     <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
       {items.map((item, i) => (
         <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: "12px 0", borderBottom: "1px solid #2a2720" }}>
-          <span style={{ color: "#b79d3e", fontSize: 16, flexShrink: 0, marginTop: 1, fontWeight: 700 }}>✓</span>
+          <span style={{ color: "#ffd53b", fontSize: 16, flexShrink: 0, marginTop: 1, fontWeight: 700 }}>✓</span>
           <span style={{ color: "#cfc9bd", fontSize: 15, lineHeight: 1.5 }}>{item}</span>
         </li>
       ))}
@@ -88,7 +88,7 @@ export default function Sportonderzoeken() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(/images/SportTest.jpg)", backgroundSize: "cover", backgroundPosition: "center 30%", filter: "brightness(0.2)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,11,10,1) 0%, rgba(12,11,10,0) 55%)" }} />
         <div style={{ position: "relative", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
-          <p style={{ color: "#b79d3e", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
+          <p style={{ color: "#ffd53b", fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", margin: "0 0 12px" }}>Wat bieden wij</p>
           <h1 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(40px, 6vw, 80px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 16px", lineHeight: 1 }}>
             Sportonderzoeken
           </h1>
@@ -141,7 +141,7 @@ export default function Sportonderzoeken() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(24px, 3vw, 40px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px", lineHeight: 1 }}>
               Onderdelen van het sportonderzoek
             </h2>
-            <div style={{ width: 40, height: 2, background: "#b79d3e", margin: "16px 0 40px" }} />
+            <div style={{ width: 40, height: 2, background: "#ffd53b", margin: "16px 0 40px" }} />
           </Reveal>
           <Reveal>
             <CheckList items={onderdelen} />
@@ -154,7 +154,7 @@ export default function Sportonderzoeken() {
       <section style={{ background: "#0c0b0a", padding: "72px 24px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <Reveal>
-            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 64px", borderLeft: "3px solid #b79d3e", paddingLeft: 28 }}>
+            <p style={{ fontSize: 16, color: "#b8b3aa", lineHeight: 1.9, margin: "0 0 64px", borderLeft: "3px solid #ffd53b", paddingLeft: 28 }}>
               De behaalde resultaten worden uitvoerig met je besproken en vertaald naar de praktijk. Basisconditie, maximale
               vermogens, sterke en zwakke punten bepalen in grote lijnen het algemene trainingsadvies. Trainingsrichtlijnen
               worden gesteld a.d.h.v. je doelstellingen en je kunt hierna direct aan de slag!
@@ -165,7 +165,7 @@ export default function Sportonderzoeken() {
             <h2 style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(24px, 3vw, 40px)", textTransform: "uppercase", color: "#f4efe6", margin: "0 0 8px", lineHeight: 1 }}>
               Voordelen sportonderzoek
             </h2>
-            <div style={{ width: 40, height: 2, background: "#b79d3e", margin: "16px 0 40px" }} />
+            <div style={{ width: 40, height: 2, background: "#ffd53b", margin: "16px 0 40px" }} />
           </Reveal>
           <Reveal>
             <CheckList items={voordelen} />
@@ -183,11 +183,11 @@ export default function Sportonderzoeken() {
             </h2>
             <p style={{ color: "#b8b3aa", fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>
               Bel ons op{" "}
-              <a href="tel:06-14634488" style={{ color: "#b79d3e", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
+              <a href="tel:06-14634488" style={{ color: "#ffd53b", textDecoration: "none", fontWeight: 600 }}>06-14634488</a>
               {" "}of stuur een bericht via onderstaande knop.
             </p>
             <a href="mailto:info@fit-partners.nl?subject=Aanvraag sportonderzoek"
-              style={{ display: "inline-block", background: "#b79d3e", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              style={{ display: "inline-block", background: "#ffd53b", color: "#0c0b0a", padding: "16px 40px", fontWeight: 700, fontSize: 14, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
               Aanvraag intake
             </a>
           </Reveal>
