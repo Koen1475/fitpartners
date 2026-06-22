@@ -29,7 +29,7 @@ export default function Diensten() {
         </div>
       </div>
 
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: 24, scrollbarWidth: "none" }}>
+      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: "max(24px, calc((100vw - 1200px)/2 + 24px))", scrollbarWidth: "none" }}>
         {diensten.map((d) => (
           <div key={d.title} style={{ flexShrink: 0, width: 320, background: "#131211" }}>
             <div style={{ position: "relative", height: 200, overflow: "hidden" }}>

@@ -30,7 +30,7 @@ export default function Team() {
         </div>
       </div>
 
-      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: 24, scrollbarWidth: "none" }}>
+      <div ref={ref} style={{ display: "flex", gap: 24, overflowX: "auto", paddingLeft: "max(24px, calc((100vw - 1200px)/2 + 24px))", paddingRight: "max(24px, calc((100vw - 1200px)/2 + 24px))", scrollbarWidth: "none" }}>
         {team.map((t) => (
           <div key={t.name} onMouseEnter={() => setHovered(t.name)} onMouseLeave={() => setHovered(null)}
             style={{ flexShrink: 0, width: 340, position: "relative", cursor: "default" }}>
